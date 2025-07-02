@@ -4,9 +4,9 @@ import LazyImage from "./LazyImage";
 
 import sevenImage from '../assets/product/louver/Seven.png';
 import FourImage from '../assets/product/louver/Four2.png';
-import ThreeImage from '../assets/product/louver/Three2.PNG';
-import zinc370Image from '../assets/product/zinc/Three.PNG';
-import zinc450Image from '../assets/product/zinc/Four.PNG';
+import ThreeImage from '../assets/product/louver/Three2.png';
+import zinc370Image from '../assets/product/zinc/Three.png';
+import zinc450Image from '../assets/product/zinc/Four.png';
 import spandekImage from '../assets/product/spandek/Spandekcolour.PNG';
 import posmacImage from '../assets/product/cable/Posmac.PNG';
 import accessoriessImage from '../assets/product/cable/Accessories.PNG';
