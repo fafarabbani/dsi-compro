@@ -132,7 +132,9 @@ const Product = () => {
 
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold text-slate-900">
-                    <span className="text-[#0000ff] mr-3">DSI</span>{product.title}
+                    <Link to={product.link}>
+                      <span className="text-[#0000ff] mr-3">DSI</span>{product.title}
+                    </Link>
                   </h3>
                   <p className="text-slate-600 leading-relaxed text-justify">
                     {product.description}

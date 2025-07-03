@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ExternalLink, ArrowUpRight, Code } from "lucide-react";
 import { useNavigate } from "react-router-dom"; 
 import LazyImage from "./LazyImage";
+import { Link } from 'react-router-dom';
 
 import sevenImage from '../assets/product/louver/Seven.png';
 import FourImage from '../assets/product/louver/Four2.png';
@@ -412,17 +413,20 @@ const Products = () => {
                 </div>
 
                 {/* Project info */}
-                <div className="p-8">
+                <div className="p-8 flex flex-col">
                   <div className="flex items-center justify-between mb-4">
                     <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-950">
                       {/* {project.title} */}
                       DSI Product
                     </span>
                   </div>
-
-                  <h3 className="text-xl font-bold text-blue-900 mb-5">
+                  
+                  <button
+                    className="inline-flex text-xl font-bold text-blue-900 pb-10 cursor-pointer"
+                    onClick={() => handleViewDetails(project)}
+                  >
                     {project.category}
-                  </h3> 
+                  </button>
 
                   <button
                     className="inline-flex items-center gap-2 text-blue-900 hover:text-blue-700 font-medium group"
