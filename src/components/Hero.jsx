@@ -2,11 +2,11 @@ import React from "react";
 import heroImage from "../assets/Hero.PNG";
 
 const Hero = () => {
-  const stats = [
-    { value: "99%", label: "Client Satisfaction" },
-    { value: "1500+", label: "Projects Completed" },
-    { value: "24/7", label: "Expert Support" },
-  ];
+  // const stats = [
+  //   { value: "99%", label: "Client Satisfaction" },
+  //   { value: "1500+", label: "Projects Completed" },
+  //   { value: "24/7", label: "Expert Support" },
+  // ];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-[#fafafa] overflow-hidden">

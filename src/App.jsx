@@ -13,6 +13,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Dsi from "./components/Dsi";
 import Product from "./components/Product";
+import Products from "./components/Products";
+import DetailsProduct from "./components/DetailsProduct";
 
 // Wrapper component to handle scroll to top on route change
 const ScrollToTop = () => {
@@ -44,16 +46,20 @@ const HomePage = () => (
     <Hero />
     <Dsi />
     <Product />
+    <Products />
     <About />
     <Portfolio />
     <Contact />
+    <DetailsProduct />
     
   </>
 );
 
 const AboutPage = () => <About />;
 const PortfolioPage = () => <Portfolio />;
+const ProductsPage = () => <Products />;
 const ContactPage = () => <Contact />;
+const DetailPage = () => <DetailsProduct />;
 
 function App() {
   return (
@@ -64,7 +70,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/product" element={<PortfolioPage />} />
+          <Route path="/products" element={<ProductsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/detail" element={<DetailsProduct />} />
         </Routes>
       </Layout>
     </Router>

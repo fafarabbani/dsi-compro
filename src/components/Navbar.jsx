@@ -23,7 +23,8 @@ const Navbar = () => {
   const menuItems = [
     { title: "Home", href: "/" },
     { title: "About Us", href: "/about" },
-    { title: "Our Product", href: "/product" },
+    // { title: "Our Product", href: "/product" },
+    { title: "Our Products", href: "/products" },
     { title: "Contact", href: "/contact" },
   ];
 

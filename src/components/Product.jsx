@@ -84,7 +84,7 @@ const Product = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="flex gap-10 mb-24 items-center justify-center">
-          <h2 className="text-5xl font-bold tracking-tight text-[#DC2525] lg:text-6xl">
+          <h2 className="text-5xl font-bold bg-gradient-to-r from-[#f00606] to-[#DC2525] bg-clip-text text-transparent lg:text-6xl">
             Top
             <span className="ml-5 mt-2 bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">
               Quality
