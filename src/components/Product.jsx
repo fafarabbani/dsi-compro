@@ -22,7 +22,7 @@ const Product = () => {
         "Our Louvered Steel Plate is crafted exclusively from 100% high-quality Korean materials, provides reliable, long-lasting protection and efficiency, standing out as a superior choice in the market.",
       image: louverImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-      link: "/product", 
+      link: "/products", 
     },
     {
       title: "Zinc Steel Panel",
@@ -30,7 +30,7 @@ const Product = () => {
         "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
       image: zincImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-      link: "/product", 
+      link: "/products", 
     },
     {
       title: "Spandek Steel Panel",
@@ -38,7 +38,7 @@ const Product = () => {
         "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
       image: spandekImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-      link: "/product", 
+      link: "/products", 
     },
     {
       title: "Cable Tray",
@@ -46,7 +46,7 @@ const Product = () => {
         "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
       image: cableImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-      link: "/product", 
+      link: "/products", 
     },
     {
       title: "Interior Epoxy",
@@ -54,7 +54,7 @@ const Product = () => {
         "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
       image: interiorImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-      link: "/product", 
+      link: "/products", 
     },
     {
       title: "Resin Epoxy",
@@ -62,7 +62,7 @@ const Product = () => {
         "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
       image: resinImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-      link: "/product", 
+      link: "/products", 
     },
   ];
 
