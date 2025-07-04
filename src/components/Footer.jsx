@@ -3,27 +3,22 @@ import {
   Mail,
   MapPin,
   Phone,
-  Twitter,
-  Facebook,
   Instagram,
-  Linkedin,
+  Youtube,
 } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: "Twitter", url: "https://twitter.com", icon: Twitter },
-    { name: "Facebook", url: "https://facebook.com", icon: Facebook },
-    { name: "Instagram", url: "https://instagram.com", icon: Instagram },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: Linkedin },
+    { name: "Youtube", url: "https://youtube.com/@ptdsimetaltechnology", icon: Youtube },
+    { name: "Instagram", url: "https://instagram.com/dsi_metaltechnology", icon: Instagram },
   ];
 
   const quickLinks = [
     { name: "Home", url: "/" },
     { name: "About Us", url: "/about" },
-    // { name: "Services", url: "/services" },
-    { name: "Our Product", url: "/portfolio" },
+    { name: "Our Products", url: "/products" },
     { name: "Contact", url: "/contact" },
   ];
 
@@ -92,7 +87,7 @@ const Footer = () => {
               <li className="flex items-center text-slate-300">
                 <MapPin className="w-5 h-5 mr-3 text-violet-400" />
                 <span>
-                  Industrial Park 2000 Blok E No.7
+                  Komp PT. Integrated Silicon Techology
                   <br />
                   Kepulauan Riau - Indonesia
                 </span>

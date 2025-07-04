@@ -14,19 +14,19 @@ const Dsi = () => {
       </div>
     </div>
 
-    <div className="flex justify-between gap-10">
+    <div className="flex flex-col lg:flex-row justify-between gap-10">
       {/* DSI 1 - Gambar */}
-      <div className="w-2/5">
-            <img
-              src={bookImage}
-              alt=""
-              className="rounded-lg"
-            />
+      <div className="w-full lg:w-2/5">
+        <img
+          src={bookImage}
+          alt=""
+          className="rounded-lg w-full"
+        />
       </div>
 
       {/* DSI 2 - Teks */}
-      <div className="w-3/5 gap-5">
-        <h1 className="font-black lg:text-5xl bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">
+      <div className="w-full lg:w-3/5 gap-5">
+        <h1 className="font-black lg:text-5xl text-xl bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">
           PT DSI METAL TECHNOLOGY
         </h1>
         <div className="mt-4 text-justify">
@@ -44,6 +44,7 @@ const Dsi = () => {
         </div>
       </div>
     </div>
+
   </section>
   )
 }

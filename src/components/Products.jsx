@@ -4,12 +4,12 @@ import { useNavigate } from "react-router-dom";
 import LazyImage from "./LazyImage";
 import { Link } from 'react-router-dom';
 
-import sevenImage from '../assets/product/louver/Seven.png';
-import FourImage from '../assets/product/louver/Four2.png';
-import ThreeImage from '../assets/product/louver/Three2.png';
-import zinc370Image from '../assets/product/zinc/Three.png';
-import zinc450Image from '../assets/product/zinc/Four.png';
-import spandekImage from '../assets/product/spandek/Spandekcolour.PNG';
+import sevenImage from '../assets/product/louver/seven/one.png';
+import FourImage from '../assets/product/louver/four/one.png';
+import ThreeImage from '../assets/product/louver/three/one.png';
+import zinc360Image from '../assets/product/zinc/360/one.png';
+import zinc450Image from '../assets/product/zinc/450/one.png';
+import spandekImage from '../assets/product/spandek/250/one.png';
 import posmacImage from '../assets/product/cable/posmac/one.png';
 import aluminiumImage from '../assets/product/cable/aluminium/one.png';
 import hdgCableImage from '../assets/product/cable/hdgcable/one.png';
@@ -22,16 +22,42 @@ const Products = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const navigate = useNavigate();
 
-  const categories = ["All", "Louver Steel Panel", "Zinc Steel Panel", "Spandek Steel Panel", "Cable Tray", "Interior Epoxy", "Resin Epoxy"];
+  const categories = ["All", "Spandek Steel Panel", "Louver Steel Panel", "Zinc Steel Panel", "Cable Tray", "Interior Epoxy", "Resin Epoxy"];
 
   const projects = [
+
+    {
+      title: "Spandek",
+      image: spandekImage,
+      category: "Spandek Steel Panel",
+      details: [
+        { label: "Thickness", value: "0.4 mm & 0.5 ⅟ mm" },
+        { label: "Coil Width", value: "530 mm" },
+        { label: "Product Thx", value: "38 T" },
+      ],
+      limits: [
+        { label: "Width", value: "396.5 mm" },
+        { label: "Length", value: "min 900 mm" },
+        { label: "Corner", value: "Lock" },
+      ],
+      prices: [
+        { label: "B2B Price", value: "300.000" },
+        { label: "Agent Price", value: "325.000" },
+        { label: "Market Price", value: "555.000" },
+      ],
+      informations: [
+        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
+        { label: "Customer Order Size", value: "Start 1m until 30m" },
+      ],
+    },
+
     {
       title: "Louver Steel Panel 7 Ribs",
       image: sevenImage,
       category: "Louver Steel Panel",
       details: [
-        { label: "Thickness", value: "0.5 ⅟ m/m" },
-        { label: "Coil Width", value: "610 MM" },
+        { label: "Thickness", value: "0.5 ⅟ mm" },
+        { label: "Coil Width", value: "610 mm" },
         { label: "Product Thx", value: "17.5 T" },
       ],
       limits: [
@@ -54,8 +80,8 @@ const Products = () => {
       image: FourImage,
       category: "Louver Steel Panel",
       details: [
-        { label: "Thickness", value: "0.5 ⅟ m/m" },
-        { label: "Coil Width", value: "610 MM" },
+        { label: "Thickness", value: "0.5 ⅟ mm" },
+        { label: "Coil Width", value: "610 mm" },
         { label: "Product Thx", value: "17.5 T" },
       ],
       limits: [
@@ -78,8 +104,8 @@ const Products = () => {
       image: ThreeImage,
       category: "Louver Steel Panel",
       details: [
-        { label: "Thickness", value: "0.5 ⅟ m/m" },
-        { label: "Coil Width", value: "610 MM" },
+        { label: "Thickness", value: "0.5 ⅟ mm" },
+        { label: "Coil Width", value: "610 mm" },
         { label: "Product Thx", value: "17.5 T" },
       ],
       limits: [
@@ -99,12 +125,12 @@ const Products = () => {
     },
 
     {
-      title: "Zinc Steel Plate 370 Width",
-      image: zinc370Image,
+      title: "Zinc Steel Plate 360 Width",
+      image: zinc360Image,
       category: "Zinc Steel Panel",
       details: [
-        { label: "Thickness", value: "0.5 ⅟ m/m" },
-        { label: "Coil Width", value: "530 MM" },
+        { label: "Thickness", value: "0.5 ⅟ mm" },
+        { label: "Coil Width", value: "530 mm" },
         { label: "Product Thx", value: "38 T" },
       ],
       limits: [
@@ -127,8 +153,8 @@ const Products = () => {
       image: zinc450Image,
       category: "Zinc Steel Panel",
       details: [
-        { label: "Thickness", value: "0.5 ⅟ m/m" },
-        { label: "Coil Width", value: "530 MM" },
+        { label: "Thickness", value: "0.5 ⅟ mm" },
+        { label: "Coil Width", value: "530 mm" },
         { label: "Product Thx", value: "38 T" },
       ],
       limits: [
@@ -147,100 +173,75 @@ const Products = () => {
       ],
     },
 
-    {
-      title: "Roof Steel / Spandek",
-      image: spandekImage,
-      category: "Spandek Steel Panel",
-      details: [
-        { label: "Thickness", value: "0.4 m/m & 0.5 ⅟ m/m" },
-        { label: "Coil Width", value: "530 MM" },
-        { label: "Product Thx", value: "38 T" },
-      ],
-      limits: [
-        { label: "Width", value: "396.5 mm" },
-        { label: "Length", value: "min 900 mm" },
-        { label: "Corner", value: "Lock" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
-      ],
-    },
-
-    {
-      title: "[Posmac] Ladder Tray",
-      image: posmacImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 2.0T",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "[Aluminium] Ladder Tray",
-      image: aluminiumImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 2.0T x 20F",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "[Hot-Dip Galvanized] Cable Duct",
-      image: hdgCableImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 2.0T",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "[Galvanized Iron] Cable Duct",
-      image: giCableImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 1.6T",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "[Hot-Dip Galvanized] Ladder Tray",
-      image: hdgLadderImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 2.0T",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "[Powder Coated] Cable Duct",
-      image: pcCableImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 1.6T",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "Accessories",
-      image: accessoriesImage,
-      category: "Cable Tray",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
+    // {
+    //   title: "[Posmac] Ladder Tray",
+    //   image: posmacImage,
+    //   category: "Cable Tray",
+    //   info: "H100 x L3000 x 2.0T",
+    //   details: [ ],
+    //   limits: [ ],
+    //   prices: [ ],
+    //   informations: [],
+    // },
+    // {
+    //   title: "[Aluminium] Ladder Tray",
+    //   image: aluminiumImage,
+    //   category: "Cable Tray",
+    //   info: "H100 x L3000 x 2.0T x 20F",
+    //   details: [ ],
+    //   limits: [ ],
+    //   prices: [ ],
+    //   informations: [],
+    // },
+    // {
+    //   title: "[Hot-Dip Galvanized] Cable Duct",
+    //   image: hdgCableImage,
+    //   category: "Cable Tray",
+    //   info: "H100 x L3000 x 2.0T",
+    //   details: [ ],
+    //   limits: [ ],
+    //   prices: [ ],
+    //   informations: [],
+    // },
+    // {
+    //   title: "[Galvanized Iron] Cable Duct",
+    //   image: giCableImage,
+    //   category: "Cable Tray",
+    //   info: "H100 x L3000 x 1.6T",
+    //   details: [ ],
+    //   limits: [ ],
+    //   prices: [ ],
+    //   informations: [],
+    // },
+    // {
+    //   title: "[Hot-Dip Galvanized] Ladder Tray",
+    //   image: hdgLadderImage,
+    //   category: "Cable Tray",
+    //   info: "H100 x L3000 x 2.0T",
+    //   details: [ ],
+    //   limits: [ ],
+    //   prices: [ ],
+    //   informations: [],
+    // },
+    // {
+    //   title: "[Powder Coated] Cable Duct",
+    //   image: pcCableImage,
+    //   category: "Cable Tray",
+    //   info: "H100 x L3000 x 1.6T",
+    //   details: [ ],
+    //   limits: [ ],
+    //   prices: [ ],
+    //   informations: [],
+    // },
+    // {
+    //   title: "Accessories",
+    //   image: accessoriesImage,
+    //   category: "Cable Tray",
+    //   details: [ ],
+    //   limits: [ ],
+    //   prices: [ ],
+    //   informations: [],
+    // },
 
   ];
 

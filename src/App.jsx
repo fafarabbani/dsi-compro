@@ -8,7 +8,6 @@ import {
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Dsi from "./components/Dsi";
@@ -68,7 +67,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/detail" element={<DetailsProduct />} />
+          <Route path="/detail" element={<DetailPage />} />
         </Routes>
       </Layout>
     </Router>

@@ -72,7 +72,7 @@ const About = () => {
         </div>
 
         {/* Feature cards */}
-        <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-3">
+        {/* <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => (
             <div
               key={feature.title}
@@ -102,10 +102,10 @@ const About = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Stats section */}
-        <div className="mt-24 rounded-3xl bg-slate-900 p-12 sm:p-16 relative overflow-hidden">
+        {/* <div className="mt-24 rounded-3xl bg-slate-900 p-12 sm:p-16 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-indigo-600/10" />
           <div className="relative grid grid-cols-2 gap-12 md:grid-cols-4">
             {stats.map((stat) => (
@@ -120,7 +120,7 @@ const About = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
