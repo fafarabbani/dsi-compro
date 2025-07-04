@@ -8,15 +8,7 @@ import threeLouverImage from '../assets/product/louver/seven/3.jpg';
 import fourLouverImage from '../assets/product/louver/seven/4.jpg';
 import fiveLouverImage from '../assets/product/louver/seven/5.jpg';
 import oneZincImage from '../assets/product/zinc/360/1.jpg';
-import twoZincImage from '../assets/product/zinc/360/2.jpg';
-import threeZincImage from '../assets/product/zinc/360/3.jpg';
-import fourZincImage from '../assets/product/zinc/360/4.jpg';
-import fiveZincImage from '../assets/product/zinc/360/5.jpg';
 import oneSpandekImage from '../assets/product/spandek/250/1.jpg';
-import twoSpandekImage from '../assets/product/spandek/250/2.jpg';
-import threeSpandekImage from '../assets/product/spandek/250/3.jpg';
-import fourSpandekImage from '../assets/product/spandek/250/4.jpg';
-import fiveSpandekImage from '../assets/product/spandek/250/5.jpg';
 import onePosmacImage from '../assets/product/cable/posmac/1.png';
 import twoPosmacImage from '../assets/product/cable/posmac/2.jpg';
 import threePosmacImage from '../assets/product/cable/posmac/3.jpg';
@@ -76,18 +68,10 @@ const DetailsProduct = () => {
     } else if (project.category === "Zinc Steel Panel") {
       images = [
         oneZincImage,
-        twoZincImage,
-        threeZincImage,
-        fourZincImage,
-        fiveZincImage
       ];
     } else if (project.category === "Spandek Steel Panel") {
       images = [
         oneSpandekImage,
-        twoSpandekImage,
-        threeSpandekImage,
-        fourSpandekImage,
-        fiveSpandekImage
       ];
     } else if (project.title === "[Posmac] Ladder Tray") {
       images = [
@@ -301,7 +285,7 @@ const DetailsProduct = () => {
                       <div key={idx} className="text-gray-600">
                         <div className="text-sm opacity-75">
                           {price.label}
-                          <span className="text-red-700"> per m²</span>
+                          <span className="text-red-700">{price.unit}</span>
                         </div>
                         <div className="text-md font-bold">
                           <span>Rp. </span>

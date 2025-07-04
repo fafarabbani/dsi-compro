@@ -22,7 +22,16 @@ const Products = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const navigate = useNavigate();
 
-  const categories = ["All", "Spandek Steel Panel", "Louver Steel Panel", "Zinc Steel Panel", "Cable Tray", "Interior Epoxy", "Resin Epoxy"];
+  const categories = 
+  [
+    "All", 
+    "Spandek Steel Panel", 
+    "Louver Steel Panel", 
+    "Zinc Steel Panel", 
+    // "Cable Tray", 
+    // "Interior Epoxy", 
+    // "Resin Epoxy"
+  ];
 
   const projects = [
 
@@ -41,9 +50,8 @@ const Products = () => {
         { label: "Corner", value: "Lock" },
       ],
       prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
+        { label: "0,4 mm x 1 m", value: "245.000"},
+        { label: "0,51 mm x 1 m", value: "280.000"},
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
@@ -66,9 +74,9 @@ const Products = () => {
         { label: "Corner", value: "Var" },
       ],
       prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
+        { label: "B2B Price", value: "300.000", unit: " per m²"  },
+        { label: "Agent Price", value: "325.000", unit: " per m²"  },
+        { label: "Market Price", value: "555.000", unit: " per m²"  },
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
@@ -90,9 +98,9 @@ const Products = () => {
         { label: "Corner", value: "Var" },
       ],
       prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
+        { label: "B2B Price", value: "300.000", unit: " per m²"  },
+        { label: "Agent Price", value: "325.000", unit: " per m²"  },
+        { label: "Market Price", value: "555.000", unit: " per m²"  },
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
@@ -114,9 +122,9 @@ const Products = () => {
         { label: "Corner", value: "Var" },
       ],
       prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
+        { label: "B2B Price", value: "300.000", unit: " per m²"  },
+        { label: "Agent Price", value: "325.000", unit: " per m²"  },
+        { label: "Market Price", value: "555.000", unit: " per m²"  },
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
@@ -139,9 +147,9 @@ const Products = () => {
         { label: "Corner", value: "Lock" },
       ],
       prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
+        { label: "B2B Price", value: "300.000", unit: " per m²"  },
+        { label: "Agent Price", value: "325.000", unit: " per m²"  },
+        { label: "Market Price", value: "555.000", unit: " per m²"  },
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
@@ -163,9 +171,9 @@ const Products = () => {
         { label: "Corner", value: "Lock" },
       ],
       prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
+        { label: "B2B Price", value: "300.000", unit: " per m²"  },
+        { label: "Agent Price", value: "325.000", unit: " per m²"  },
+        { label: "Market Price", value: "555.000", unit: " per m²"  },
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },

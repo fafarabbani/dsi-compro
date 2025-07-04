@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import louverImage from '../assets/Louver.PNG';
-import zincImage from '../assets/Zinc.PNG';
+import zincImage from '../assets/Zinc.jpg';
 import spandekImage from '../assets/Spandek.PNG';
-import cableImage from '../assets/Cable.PNG';
-import interiorImage from '../assets/Interior.PNG';
-import resinImage from '../assets/Resin.PNG';
+// import cableImage from '../assets/Cable.PNG';
+// import interiorImage from '../assets/Interior.PNG';
+// import resinImage from '../assets/Resin.PNG';
 
 import {
   ArrowUpRight,
