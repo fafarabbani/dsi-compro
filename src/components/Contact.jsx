@@ -24,7 +24,7 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Batam Showroom",
+      title: "DSI Showroom & Factory",
       details: ["Komplek Pt. Integrated Silicon Techology, Kel. Sungai Panas, Kec. Batam Kota, Kota Batam, Provinsi Kepulauan Riau"],
       ariaLabel: "Office Location",
     },
