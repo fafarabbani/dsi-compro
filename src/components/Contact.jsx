@@ -253,13 +253,11 @@ const Contact = () => {
                 <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
                   Let's Build Something
                   <span className="block mt-2 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
-                    Amazing Together
+                    Awesome Together
                   </span>
                 </h2>
                 <p className="text-lg text-slate-600 mt-4">
-                  Whether you have a question about our services, need a custom
-                  solution, or just want to say hello, we'd love to hear from
-                  you.
+                  Do you have questions about our services, need a custom solution, or just want to say hello? We are here to listen and help you.
                 </p>
               </div>
 

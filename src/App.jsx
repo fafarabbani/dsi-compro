@@ -46,17 +46,14 @@ const HomePage = () => (
     <Hero />
     <Dsi />
     <Product />
-    <Products />
+    {/* <Products /> */}
     <About />
-    <Portfolio />
     <Contact />
-    <DetailsProduct />
     
   </>
 );
 
 const AboutPage = () => <About />;
-const PortfolioPage = () => <Portfolio />;
 const ProductsPage = () => <Products />;
 const ContactPage = () => <Contact />;
 const DetailPage = () => <DetailsProduct />;
@@ -69,7 +66,6 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/product" element={<PortfolioPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/detail" element={<DetailsProduct />} />

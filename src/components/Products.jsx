@@ -10,13 +10,13 @@ import ThreeImage from '../assets/product/louver/Three2.png';
 import zinc370Image from '../assets/product/zinc/Three.png';
 import zinc450Image from '../assets/product/zinc/Four.png';
 import spandekImage from '../assets/product/spandek/Spandekcolour.PNG';
-import posmacImage from '../assets/product/cable/Posmac.PNG';
-import accessoriesImage from '../assets/product/cable/Accessories.PNG';
-import aluminiumImage from '../assets/product/cable/Aluminiumladdertray.PNG';
-import giCableImage from '../assets/product/cable/Gicableduct.PNG';
-import hdgCableImage from '../assets/product/cable/Hdgcableduct.PNG';
-import hdgLadderImage from '../assets/product/cable/Hdgladdertray.PNG';
-import pcCableImage from '../assets/product/cable/Pccableduct.PNG';
+import posmacImage from '../assets/product/cable/posmac/one.png';
+import aluminiumImage from '../assets/product/cable/aluminium/one.png';
+import hdgCableImage from '../assets/product/cable/hdgcable/one.png';
+import giCableImage from '../assets/product/cable/gicable/one.png';
+import hdgLadderImage from '../assets/product/cable/hdgladder/one.png';
+import pcCableImage from '../assets/product/cable/pccable/one.png';
+import accessoriesImage from '../assets/product/cable/accessories/one.png';
 
 const Products = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -26,7 +26,7 @@ const Products = () => {
 
   const projects = [
     {
-      title: "Seven Panel",
+      title: "Louver Steel Panel 7 Ribs",
       image: sevenImage,
       category: "Louver Steel Panel",
       details: [
@@ -50,7 +50,7 @@ const Products = () => {
       ],
     },
     {
-      title: "Four Panel",
+      title: "Louver Steel Panel 4 Ribs",
       image: FourImage,
       category: "Louver Steel Panel",
       details: [
@@ -74,7 +74,7 @@ const Products = () => {
       ],
     },
     {
-      title: "Three Panel",
+      title: "Louver Steel Panel 3 Ribs",
       image: ThreeImage,
       category: "Louver Steel Panel",
       details: [
@@ -99,7 +99,7 @@ const Products = () => {
     },
 
     {
-      title: "Zinc 370",
+      title: "Zinc Steel Plate 370 Width",
       image: zinc370Image,
       category: "Zinc Steel Panel",
       details: [
@@ -123,7 +123,7 @@ const Products = () => {
       ],
     },
     {
-      title: "Zinc 450",
+      title: "Zinc Steel Panel 450 Width",
       image: zinc450Image,
       category: "Zinc Steel Panel",
       details: [
@@ -148,7 +148,7 @@ const Products = () => {
     },
 
     {
-      title: "Spandek",
+      title: "Roof Steel / Spandek",
       image: spandekImage,
       category: "Spandek Steel Panel",
       details: [
@@ -173,172 +173,73 @@ const Products = () => {
     },
 
     {
-      title: "Posmac",
+      title: "[Posmac] Ladder Tray",
       image: posmacImage,
       category: "Cable Tray",
-      details: [
-        { label: "Thickness", value: "0.4 m/m" },
-        { label: "Coil Width", value: "530 MM" },
-        { label: "Product Thx", value: "38 T" },
-      ],
-      limits: [
-        { label: "Width", value: "396.5 mm" },
-        { label: "Length", value: "min 900 mm" },
-        { label: "Corner", value: "Lock" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
-      ],
+      info: "H100 x L3000 x 2.0T",
+      details: [ ],
+      limits: [ ],
+      prices: [ ],
+      informations: [],
     },
     {
-      title: "Aluminium",
+      title: "[Aluminium] Ladder Tray",
       image: aluminiumImage,
       category: "Cable Tray",
-      details: [
-        { label: "Thickness", value: "0.4 m/m" },
-        { label: "Coil Width", value: "530 MM" },
-        { label: "Product Thx", value: "38 T" },
-      ],
-      limits: [
-        { label: "Width", value: "396.5 mm" },
-        { label: "Length", value: "min 900 mm" },
-        { label: "Corner", value: "Lock" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
-      ],
+      info: "H100 x L3000 x 2.0T x 20F",
+      details: [ ],
+      limits: [ ],
+      prices: [ ],
+      informations: [],
     },
     {
-      title: "Hdg Cable Duct",
+      title: "[Hot-Dip Galvanized] Cable Duct",
       image: hdgCableImage,
       category: "Cable Tray",
-      details: [
-        { label: "Thickness", value: "0.4 m/m" },
-        { label: "Coil Width", value: "530 MM" },
-        { label: "Product Thx", value: "38 T" },
-      ],
-      limits: [
-        { label: "Width", value: "396.5 mm" },
-        { label: "Length", value: "min 900 mm" },
-        { label: "Corner", value: "Lock" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
-      ],
+      info: "H100 x L3000 x 2.0T",
+      details: [ ],
+      limits: [ ],
+      prices: [ ],
+      informations: [],
     },
     {
-      title: "Gi Cable Duct",
+      title: "[Galvanized Iron] Cable Duct",
       image: giCableImage,
       category: "Cable Tray",
-      details: [
-        { label: "Thickness", value: "0.4 m/m" },
-        { label: "Coil Width", value: "530 MM" },
-        { label: "Product Thx", value: "38 T" },
-      ],
-      limits: [
-        { label: "Width", value: "396.5 mm" },
-        { label: "Length", value: "min 900 mm" },
-        { label: "Corner", value: "Lock" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
-      ],
+      info: "H100 x L3000 x 1.6T",
+      details: [ ],
+      limits: [ ],
+      prices: [ ],
+      informations: [],
     },
     {
-      title: "Hdg Ladder Tray",
+      title: "[Hot-Dip Galvanized] Ladder Tray",
       image: hdgLadderImage,
       category: "Cable Tray",
-      details: [
-        { label: "Thickness", value: "0.4 m/m" },
-        { label: "Coil Width", value: "530 MM" },
-        { label: "Product Thx", value: "38 T" },
-      ],
-      limits: [
-        { label: "Width", value: "396.5 mm" },
-        { label: "Length", value: "min 900 mm" },
-        { label: "Corner", value: "Lock" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
-      ],
+      info: "H100 x L3000 x 2.0T",
+      details: [ ],
+      limits: [ ],
+      prices: [ ],
+      informations: [],
     },
     {
-      title: "Pc Cable Duct",
+      title: "[Powder Coated] Cable Duct",
       image: pcCableImage,
       category: "Cable Tray",
-      details: [
-        { label: "Thickness", value: "0.4 m/m" },
-        { label: "Coil Width", value: "530 MM" },
-        { label: "Product Thx", value: "38 T" },
-      ],
-      limits: [
-        { label: "Width", value: "396.5 mm" },
-        { label: "Length", value: "min 900 mm" },
-        { label: "Corner", value: "Lock" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
-      ],
+      info: "H100 x L3000 x 1.6T",
+      details: [ ],
+      limits: [ ],
+      prices: [ ],
+      informations: [],
     },
     {
       title: "Accessories",
       image: accessoriesImage,
       category: "Cable Tray",
-      details: [
-        { label: "Thickness", value: "0.4 m/m" },
-        { label: "Coil Width", value: "530 MM" },
-        { label: "Product Thx", value: "38 T" },
-      ],
-      limits: [
-        { label: "Width", value: "396.5 mm" },
-        { label: "Length", value: "min 900 mm" },
-        { label: "Corner", value: "Lock" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "300.000" },
-        { label: "Agent Price", value: "325.000" },
-        { label: "Market Price", value: "555.000" },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
-      ],
+      details: [ ],
+      limits: [ ],
+      prices: [ ],
+      informations: [],
     },
 
   ];
@@ -401,7 +302,7 @@ const Products = () => {
             .map((project) => (
               <div
                 key={project.title}
-                className="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500"
+                className="group relative bg-white  rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500"
               >
                 {/* Project image using LazyImage */}
                 <div className="relative aspect-[16/9] overflow-hidden rounded-t-2xl">
@@ -413,7 +314,7 @@ const Products = () => {
                 </div>
 
                 {/* Project info */}
-                <div className="p-8 flex flex-col">
+                <div className="p-8 flex flex-col justify-start">
                   <div className="flex items-center justify-between mb-4">
                     <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-950">
                       {/* {project.title} */}
@@ -422,11 +323,13 @@ const Products = () => {
                   </div>
                   
                   <button
-                    className="inline-flex text-xl font-bold text-blue-900 pb-10 cursor-pointer"
+                    className="inline-flex text-base font-bold text-blue-900 py-3 cursor-pointer"
                     onClick={() => handleViewDetails(project)}
                   >
-                    {project.category}
+                    {project.title}
                   </button>
+
+                  <div className="inline-flex text-sm font-bold text-black pb-10 cursor-pointer">{project.info}</div>
 
                   <button
                     className="inline-flex items-center gap-2 text-blue-900 hover:text-blue-700 font-medium group"

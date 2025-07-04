@@ -17,12 +17,41 @@ import twoSpandekImage from '../assets/product/spandek/details/2.jpg';
 import threeSpandekImage from '../assets/product/spandek/details/3.jpg';
 import fourSpandekImage from '../assets/product/spandek/details/4.jpg';
 import fiveSpandekImage from '../assets/product/spandek/details/5.jpg';
-import oneCableImage from '../assets/product/cable/details/1.jpg';
-import twoCableImage from '../assets/product/cable/details/2.jpg';
-import threeCableImage from '../assets/product/cable/details/3.jpg';
-import fourCableImage from '../assets/product/cable/details/4.jpg';
-import fiveCableImage from '../assets/product/cable/details/5.png';
-import bookImage  from "../assets/Book.PNG";
+import onePosmacImage from '../assets/product/cable/posmac/1.png';
+import twoPosmacImage from '../assets/product/cable/posmac/2.jpg';
+import threePosmacImage from '../assets/product/cable/posmac/3.jpg';
+import fourPosmacImage from '../assets/product/cable/posmac/4.jpg';
+import fivePosmacImage from '../assets/product/cable/posmac/5.jpg';
+import oneAluminiumImage from '../assets/product/cable/aluminium/1.png';
+import twoAluminiumImage from '../assets/product/cable/aluminium/2.jpg';
+import threeAluminiumImage from '../assets/product/cable/aluminium/3.jpg';
+import fourAluminiumImage from '../assets/product/cable/aluminium/4.jpg';
+import fiveAluminiumImage from '../assets/product/cable/aluminium/5.jpg';
+import oneHdgcableImage from '../assets/product/cable/hdgcable/1.png';
+import twoHdgcableImage from '../assets/product/cable/hdgcable/2.jpg';
+import threeHdgcableImage from '../assets/product/cable/hdgcable/3.jpg';
+import fourHdgcableImage from '../assets/product/cable/hdgcable/4.jpg';
+import fiveHdgcableImage from '../assets/product/cable/hdgcable/5.jpg';
+import oneGicableImage from '../assets/product/cable/gicable/1.png';
+import twoGicableImage from '../assets/product/cable/gicable/2.jpg';
+import threeGicableImage from '../assets/product/cable/gicable/3.jpg';
+import fourGicableImage from '../assets/product/cable/gicable/4.jpg';
+import fiveGicableImage from '../assets/product/cable/gicable/5.jpg';
+import oneHdgladderImage from '../assets/product/cable/hdgladder/1.png';
+import twoHdgladderImage from '../assets/product/cable/hdgladder/2.jpg';
+import threeHdgladderImage from '../assets/product/cable/hdgladder/3.jpg';
+import fourHdgladderImage from '../assets/product/cable/hdgladder/4.jpg';
+import fiveHdgladderImage from '../assets/product/cable/hdgladder/5.jpg';
+import onePccableImage from '../assets/product/cable/pccable/1.png';
+import twoPccableImage from '../assets/product/cable/pccable/2.jpg';
+import threePccableImage from '../assets/product/cable/pccable/3.jpg';
+import fourPccableImage from '../assets/product/cable/pccable/4.jpg';
+import fivePccableImage from '../assets/product/cable/pccable/5.jpg';
+import oneAccessoriesImage from '../assets/product/cable/accessories/1.png';
+import twoAccessoriesImage from '../assets/product/cable/accessories/2.jpg';
+import threeAccessoriesImage from '../assets/product/cable/accessories/3.jpg';
+import fourAccessoriesImage from '../assets/product/cable/accessories/4.jpg';
+import fiveAccessoriesImage from '../assets/product/cable/accessories/5.jpg';
 
 const DetailsProduct = () => {
   const location = useLocation();
@@ -60,13 +89,61 @@ const DetailsProduct = () => {
         fourSpandekImage,
         fiveSpandekImage
       ];
-    } else if (project.category === "Cable Tray") {
+    } else if (project.title === "[Posmac] Ladder Tray") {
       images = [
-        oneCableImage,
-        twoCableImage,
-        threeCableImage,
-        fourCableImage,
-        fiveCableImage
+        onePosmacImage,
+        twoPosmacImage,
+        threePosmacImage,
+        fourPosmacImage,
+        fivePosmacImage
+      ];
+    } else if (project.title === "[Aluminium] Ladder Tray") {
+      images = [
+        oneAluminiumImage,
+        twoAluminiumImage,
+        threeAluminiumImage,
+        fourAluminiumImage,
+        fiveAluminiumImage
+      ];
+    } else if (project.title === "[Hot-Dip Galvanized] Cable Duct") {
+      images = [
+        oneHdgcableImage,
+        twoHdgcableImage,
+        threeHdgcableImage,
+        fourHdgcableImage,
+        fiveHdgcableImage
+      ];
+    } else if (project.title === "[Galvanized Iron] Cable Duct") {
+      images = [
+        oneGicableImage,
+        twoGicableImage,
+        threeGicableImage,
+        fourGicableImage,
+        fiveGicableImage
+      ];
+    } else if (project.title === "[Hot-Dip Galvanized] Ladder Tray") {
+      images = [
+        oneHdgladderImage,
+        twoHdgladderImage,
+        threeHdgladderImage,
+        fourHdgladderImage,
+        fiveHdgladderImage
+      ];
+    } else if (project.title === "[Powder Coated] Cable Duct") {
+      images = [
+        onePccableImage,
+        twoPccableImage,
+        threePccableImage,
+        fourPccableImage,
+        fivePccableImage
+      ];
+    } else if (project.title === "Accessories") {
+      images = [
+        oneAccessoriesImage,
+        twoAccessoriesImage,
+        threeAccessoriesImage,
+        fourAccessoriesImage,
+        fiveAccessoriesImage
       ];
     }
     // Kamu bisa menambahkan kategori lainnya sesuai dengan data yang ada
@@ -187,86 +264,67 @@ const DetailsProduct = () => {
           {/* DSI 2 - Teks */}
           <div className="w-3/5 gap-5">
             <h1 className="font-black lg:text-5xl bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">
-              {project?.category}
+              {project?.title}
             </h1>
             <div className="mt-4 text-justify">
-                  {/* Details */}
-                  <div className="font-bold mb-2 text-slate-800">Details</div>
-                  <div className="flex flex-wrap gap-8 mb-6">
-                    {project?.details.map((detail, idx) => (
-                          <div key={idx} className="text-gray-600">
-                            <div className="text-sm opacity-75">
-                              {detail.label}
-                            </div>
-                            <div className="text-md font-bold">
-                              {detail.value}
-                            </div>
-                          </div>
-                        ))}
-                  </div>
+              {/* Details */}
+              <div className="flex flex-wrap gap-3 mb-6">
+                {project?.details.map((detail, idx) => (
+                      <div key={idx} className="text-gray-600">
+                        <div className="text-sm opacity-75">
+                          {detail.label}
+                        </div>
+                        <div className="text-md font-bold">
+                          {detail.value}
+                        </div>
+                      </div>
+                    ))}
+              </div>
 
-                  {/* Product Limits */}
-                  <div className="font-bold mb-2 text-slate-800">Product Limit</div>
-                  <div className="flex flex-wrap gap-8 mb-6">
-                    {project?.limits.map((limit, idx) => (
-                          <div key={idx} className="text-gray-600">
-                            <div className="text-sm opacity-75">
-                              {limit.label}
-                            </div>
-                            <div className="text-md font-bold">
-                              {limit.value}
-                            </div>
-                          </div>
-                        ))}
-                  </div>
+              {/* Product Limits */}
+              <div className="flex flex-wrap gap-3 mb-6">
+                {project?.limits.map((limit, idx) => (
+                      <div key={idx} className="text-gray-600">
+                        <div className="text-sm opacity-75">
+                          {limit.label}
+                        </div>
+                        <div className="text-md font-bold">
+                          {limit.value}
+                        </div>
+                      </div>
+                    ))}
+              </div>
 
-                  {/* Prices */}
-                  <div className="font-bold mb-2 text-slate-800">Price List</div>
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    {project?.prices.map((price, idx) => (
-                          <div key={idx} className="text-gray-600">
-                            <div className="text-sm opacity-75">
-                              {price.label}
-                              <span className="text-red-700"> per m²</span>
-                            </div>
-                            <div className="text-md font-bold">
-                              <span>Rp. </span>
-                              {price.value}
-                              <span>,00</span>
-                            </div>
-                          </div>
-                        ))}
-                  </div>
+              {/* Prices */}
+              <div className="flex flex-wrap gap-3 mb-6">
+                {project?.prices.map((price, idx) => (
+                      <div key={idx} className="text-gray-600">
+                        <div className="text-sm opacity-75">
+                          {price.label}
+                          <span className="text-red-700"> per m²</span>
+                        </div>
+                        <div className="text-md font-bold">
+                          <span>Rp. </span>
+                          {price.value}
+                          <span>,00</span>
+                        </div>
+                      </div>
+                    ))}
+              </div>
 
-                  {/* Informations */}
-                  <div className="font-bold mb-2 text-slate-800">Information</div>
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    {project?.informations.map((information, idx) => (
-                          <div key={idx} className="text-gray-600">
-                            <div className="text-sm opacity-75">
-                              {information.label}
-                            </div>
-                            <div className="text-md font-bold">
-                              {information.value}
-                            </div>
-                          </div>
-                        ))}
-                  </div>
-
-                  {/* Colors */}
-                  <div className="font-bold mb-2 text-slate-800">Color</div>
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    {project?.informations.map((information, idx) => (
-                          <div key={idx} className="text-gray-600">
-                            <div className="text-sm opacity-75">
-                              {information.label}
-                            </div>
-                            <div className="text-md font-bold">
-                              {information.value}
-                            </div>
-                          </div>
-                        ))}
-                  </div>
+              {/* Informations */}
+              <div className="flex flex-wrap gap-3 mb-6">
+                {project?.informations.map((information, idx) => (
+                      <div key={idx} className="text-gray-600">
+                        <div className="text-sm opacity-75">
+                          {information.label}
+                        </div>
+                        <div className="text-md font-bold">
+                          {information.value}
+                        </div>
+                      </div>
+                    ))}
+              </div>
             </div>
           </div>
         </div>
