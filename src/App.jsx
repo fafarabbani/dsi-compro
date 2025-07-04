@@ -45,7 +45,6 @@ const HomePage = () => (
     <Hero />
     <Dsi />
     <Product />
-    {/* <Products /> */}
     <About />
     <Contact />
     
