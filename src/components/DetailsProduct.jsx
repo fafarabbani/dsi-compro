@@ -73,7 +73,7 @@ const DetailsProduct = () => {
       images = [
         oneSpandekImage,
       ];
-    } else if (project.title === "[Posmac] Ladder Tray") {
+    } else if (project.category === "Ladder Tray") {
       images = [
         onePosmacImage,
         twoPosmacImage,
@@ -81,7 +81,7 @@ const DetailsProduct = () => {
         fourPosmacImage,
         fivePosmacImage
       ];
-    } else if (project.title === "[Aluminium] Ladder Tray") {
+    } else if (project.category === "Cable Duct") {
       images = [
         oneAluminiumImage,
         twoAluminiumImage,
@@ -89,7 +89,7 @@ const DetailsProduct = () => {
         fourAluminiumImage,
         fiveAluminiumImage
       ];
-    } else if (project.title === "[Hot-Dip Galvanized] Cable Duct") {
+    } else if (project.category === "Mesh Tray") {
       images = [
         oneHdgcableImage,
         twoHdgcableImage,
@@ -97,7 +97,7 @@ const DetailsProduct = () => {
         fourHdgcableImage,
         fiveHdgcableImage
       ];
-    } else if (project.title === "[Galvanized Iron] Cable Duct") {
+    } else if (project.category === "Punched Tray") {
       images = [
         oneGicableImage,
         twoGicableImage,
@@ -105,7 +105,7 @@ const DetailsProduct = () => {
         fourGicableImage,
         fiveGicableImage
       ];
-    } else if (project.title === "[Hot-Dip Galvanized] Ladder Tray") {
+    } else if (project.category === "Hi-Tec Tray System") {
       images = [
         oneHdgladderImage,
         twoHdgladderImage,
@@ -113,7 +113,7 @@ const DetailsProduct = () => {
         fourHdgladderImage,
         fiveHdgladderImage
       ];
-    } else if (project.title === "[Powder Coated] Cable Duct") {
+    } else if (project.category === "Race Way System") {
       images = [
         onePccableImage,
         twoPccableImage,
@@ -121,7 +121,7 @@ const DetailsProduct = () => {
         fourPccableImage,
         fivePccableImage
       ];
-    } else if (project.title === "Accessories") {
+    } else if (project.category === "Chanel Support System (Accessories)") {
       images = [
         oneAccessoriesImage,
         twoAccessoriesImage,

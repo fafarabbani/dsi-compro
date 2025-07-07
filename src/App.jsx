@@ -14,6 +14,8 @@ import Dsi from "./components/Dsi";
 import Product from "./components/Product";
 import Products from "./components/Products";
 import DetailsProduct from "./components/DetailsProduct";
+import Spandek from "./components/Spandek";
+import Tray from "./components/Tray";
 
 // Wrapper component to handle scroll to top on route change
 const ScrollToTop = () => {
@@ -47,13 +49,14 @@ const HomePage = () => (
     <Product />
     <About />
     <Contact />
-    
   </>
 );
 
 const AboutPage = () => <About />;
 const ProductsPage = () => <Products />;
 const ContactPage = () => <Contact />;
+const BrandSpandek = () => <Spandek />;
+const BrandTray = () => <Tray />;
 const DetailPage = () => <DetailsProduct />;
 
 function App() {
@@ -66,6 +69,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/brands/spandek" element={<BrandSpandek />} />
+          <Route path="/brands/tray" element={<BrandTray />} />
           <Route path="/detail" element={<DetailPage />} />
         </Routes>
       </Layout>

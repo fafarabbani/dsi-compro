@@ -10,15 +10,8 @@ import ThreeImage from '../assets/product/louver/three/one.png';
 import zinc360Image from '../assets/product/zinc/360/one.png';
 import zinc450Image from '../assets/product/zinc/450/one.png';
 import spandekImage from '../assets/product/spandek/250/one.png';
-import posmacImage from '../assets/product/cable/posmac/one.png';
-import aluminiumImage from '../assets/product/cable/aluminium/one.png';
-import hdgCableImage from '../assets/product/cable/hdgcable/one.png';
-import giCableImage from '../assets/product/cable/gicable/one.png';
-import hdgLadderImage from '../assets/product/cable/hdgladder/one.png';
-import pcCableImage from '../assets/product/cable/pccable/one.png';
-import accessoriesImage from '../assets/product/cable/accessories/one.png';
 
-const Products = () => {
+const Spandek = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const navigate = useNavigate();
 
@@ -28,9 +21,6 @@ const Products = () => {
     "Spandek Steel Panel", 
     "Louver Steel Panel", 
     "Zinc Steel Panel", 
-    "Cable Tray", 
-    "Interior Epoxy", 
-    "Resin Epoxy"
   ];
 
   const projects = [
@@ -181,76 +171,6 @@ const Products = () => {
       ],
     },
 
-    {
-      title: "[Posmac] Ladder Tray",
-      image: posmacImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 2.0T",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "[Aluminium] Ladder Tray",
-      image: aluminiumImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 2.0T x 20F",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "[Hot-Dip Galvanized] Cable Duct",
-      image: hdgCableImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 2.0T",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "[Galvanized Iron] Cable Duct",
-      image: giCableImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 1.6T",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "[Hot-Dip Galvanized] Ladder Tray",
-      image: hdgLadderImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 2.0T",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "[Powder Coated] Cable Duct",
-      image: pcCableImage,
-      category: "Cable Tray",
-      info: "H100 x L3000 x 1.6T",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "Accessories",
-      image: accessoriesImage,
-      category: "Cable Tray",
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-
   ];
 
   const handleViewDetails = (project) => {
@@ -356,4 +276,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Spandek;

@@ -9,6 +9,10 @@ export default {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
     },
+    // screens: {
+    //   // => @media (max-width: 1279px) { ... }
+    //   lg: { min: "925px" }
+    // }
   },
   plugins: [],
 };

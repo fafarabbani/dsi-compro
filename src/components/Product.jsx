@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import louverImage from '../assets/Louver.PNG';
 import zincImage from '../assets/Zinc.jpg';
 import spandekImage from '../assets/Spandek.PNG';
-// import cableImage from '../assets/Cable.PNG';
-// import interiorImage from '../assets/Interior.PNG';
-// import resinImage from '../assets/Resin.PNG';
+import cableImage from '../assets/Cable.PNG';
+import interiorImage from '../assets/Interior.PNG';
+import resinImage from '../assets/Resin.PNG';
 
 import {
   ArrowUpRight,
@@ -22,7 +22,7 @@ const Product = () => {
         "Our Louvered Steel Plate is crafted exclusively from 100% high-quality Korean materials, provides reliable, long-lasting protection and efficiency, standing out as a superior choice in the market.",
       image: louverImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-      link: "/products", 
+      link: "/brands/spandek", 
     },
     {
       title: "Zinc Steel Panel",
@@ -30,7 +30,7 @@ const Product = () => {
         "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
       image: zincImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-      link: "/products", 
+      link: "/brands/spandek", 
     },
     {
       title: "Spandek Steel Panel",
@@ -38,32 +38,32 @@ const Product = () => {
         "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
       image: spandekImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
+      link: "/brands/spandek", 
+    },
+    {
+      title: "Cable Tray",
+      description:
+        "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
+      image: cableImage,
+      features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
+      link: "/brands/tray", 
+    },
+    {
+      title: "Interior Epoxy",
+      description:
+        "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
+      image: interiorImage,
+      features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
       link: "/products", 
     },
-    // {
-    //   title: "Cable Tray",
-    //   description:
-    //     "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
-    //   image: cableImage,
-    //   features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-    //   link: "/products", 
-    // },
-    // {
-    //   title: "Interior Epoxy",
-    //   description:
-    //     "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
-    //   image: interiorImage,
-    //   features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-    //   link: "/products", 
-    // },
-    // {
-    //   title: "Resin Epoxy",
-    //   description:
-    //     "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
-    //   image: resinImage,
-    //   features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
-    //   link: "/products", 
-    // },
+    {
+      title: "Resin Epoxy",
+      description:
+        "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
+      image: resinImage,
+      features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
+      link: "/products", 
+    },
   ];
 
   const handleModalOpen = (product) => {

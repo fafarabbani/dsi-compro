@@ -15,7 +15,7 @@ const Hero = () => {
         {/* Gradient circles */}
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${heroImage})` }} // Menambahkan gambar sebagai background
+            style={{ backgroundImage: `url(${heroImage})` }}
           />
 
         {/* Grid pattern */}
@@ -33,7 +33,7 @@ const Hero = () => {
                 Company
               </span>
             </h1>
-            <p className="text-xl text-white leading-relaxed max-w-2xl mx-auto">
+            <p className="font-bold text-xl text-white leading-relaxed max-w-2xl mx-auto">
               Construction & Interior Material Manufacturing Factory
             </p>
           </div>

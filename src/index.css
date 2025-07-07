@@ -10,3 +10,19 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+@layer components {
+  .sub-menu {
+    @apply absolute top-[2.9rem] shadow-lg min-w-max p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-white;
+  }
+}
+
+/* Utilites Styles */
+/* @layer utilities {
+  .flex-center {
+    @apply flex items-center;
+  }
+  .flex-center-between {
+    @apply flex items-center justify-between
+  }
+} */
