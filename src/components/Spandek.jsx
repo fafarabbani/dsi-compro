@@ -174,7 +174,7 @@ const Spandek = () => {
   ];
 
   const handleViewDetails = (project) => {
-    navigate("/detail", { state: { project } });  // Passing project data to /detail route
+    navigate("/brands/spandek/detail", { state: { project } });
   };
 
   return (
@@ -196,11 +196,19 @@ const Spandek = () => {
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
-          <h2 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent lg:text-6xl">
-            DSI Metal Technology
-          </h2>
-          <h2 className="text-3xl font-bold text-slate-900 lg:text-4xl mt-3">
-            100 % KOREAN PRODUCT
+          <div className="flex items-center justify-center gap-1">
+            <div className="flex justify-between -mt-5">
+              <span className="text-lg lg:text-xl font-black tracking-tight bg-black bg-clip-text text-transparent">PT.</span>
+              <h2 className="text-3xl font-black tracking-tight bg-blue-900 bg-clip-text text-transparent lg:text-4xl">
+                DSI
+              </h2>
+            </div>
+            <h2 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent lg:text-6xl">
+              Metal Technology
+            </h2>
+          </div>
+          <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">
+            100% KOREAN PRODUCT
           </h2>
         </div>
 
@@ -231,7 +239,7 @@ const Spandek = () => {
             .map((project) => (
               <div
                 key={project.title}
-                className="group relative bg-white  rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500"
+                className="group relative bg-white  rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500"
               >
                 {/* Project image using LazyImage */}
                 <div className="relative aspect-[16/9] overflow-hidden rounded-t-2xl">
@@ -258,7 +266,7 @@ const Spandek = () => {
                     {project.title}
                   </button>
 
-                  <div className="inline-flex text-sm font-bold text-black pb-10 cursor-pointer">{project.info}</div>
+                  <div className="inline-flex text-sm font-bold text-black pb-10 cursor-pointer"></div>
 
                   <button
                     className="inline-flex items-center gap-2 text-blue-900 hover:text-blue-700 font-medium group"

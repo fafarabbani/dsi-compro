@@ -13,9 +13,12 @@ import Footer from "./components/Footer";
 import Dsi from "./components/Dsi";
 import Product from "./components/Product";
 import Products from "./components/Products";
-import DetailsProduct from "./components/DetailsProduct";
 import Spandek from "./components/Spandek";
 import Tray from "./components/Tray";
+import DetailsSpandek from "./components/DetailsSpandek";
+import MaterialsTray from "./components/MaterialsTray";
+import DetailsTray from "./components/DetailsTray";
+// import DetailsProduct from "./components/DetailsProduct";
 
 // Wrapper component to handle scroll to top on route change
 const ScrollToTop = () => {
@@ -57,7 +60,10 @@ const ProductsPage = () => <Products />;
 const ContactPage = () => <Contact />;
 const BrandSpandek = () => <Spandek />;
 const BrandTray = () => <Tray />;
-const DetailPage = () => <DetailsProduct />;
+const DetailSpandekPage = () => <DetailsSpandek />;
+const MaterialTrayPage = () => <MaterialsTray />;
+const DetailTrayPage = () => <DetailsTray />;
+// const DetailPage = () => <DetailsProduct />;
 
 function App() {
   return (
@@ -71,7 +77,10 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/brands/spandek" element={<BrandSpandek />} />
           <Route path="/brands/tray" element={<BrandTray />} />
-          <Route path="/detail" element={<DetailPage />} />
+          <Route path="/brands/spandek/detail" element={<DetailSpandekPage />} />
+          <Route path="/brands/tray/materials" element={<MaterialTrayPage />} />
+          <Route path="/brands/tray/materials/details" element={<DetailTrayPage />} />
+          {/* <Route path="/detail" element={<DetailPage />} /> */}
         </Routes>
       </Layout>
     </Router>
