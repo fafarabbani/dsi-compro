@@ -10,6 +10,7 @@ import straightMeshImage from '../assets/brands/tray/mesh/straight.jpg';
 import straightPunchedImage from '../assets/brands/tray/punched/straight.jpg';
 import accessoriesImage from '../assets/brands/tray/accessories/accessories.png';
 import racewayImage from '../assets/brands/tray/raceway/raceway.png';
+import BestProduct from "./BestProduct";
 
 
 const Tray = () => {
@@ -136,7 +137,7 @@ const Tray = () => {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group mb-8">
-            <span className="text-sm font-medium">Our Products</span>
+            <span className="text-sm font-medium">DSI Tray</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
@@ -158,6 +159,8 @@ const Tray = () => {
             <span className="text-lg lg:text-xl font-bold text-orange-500">RAW MATERIALS FROM KOREA</span>
           </div>
         </div>
+
+        {/* Best Product Tray */}
 
         {/* Category filters */}
         <div className="mt-12 flex flex-wrap justify-center gap-4">

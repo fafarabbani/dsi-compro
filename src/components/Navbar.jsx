@@ -7,6 +7,7 @@ const Navbar = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [openSubMenuIndex, setOpenSubMenuIndex] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,11 +37,13 @@ const Navbar = () => {
         {
           title: "Spandek",
           desc: "Description A",
+          // href: "",
           href: "/brands/spandek"
         },
         {
           title: "Tray",
           desc: "Description B",
+          // href: "",
           href: "/brands/tray"
         },
         {
@@ -85,6 +88,7 @@ const Navbar = () => {
 
   const closeMenu = () => {
     setIsOpen(false);
+    setOpenSubMenuIndex(null);
   };
 
   return (
@@ -154,33 +158,6 @@ const Navbar = () => {
                       }`}
                     />
                   </Link>
-
-                  {/* Sub-menu */}
-                  {/* {item.subMenu && (
-                    <div
-                      className="sub-menu"
-                    >
-                      {
-                        item.subMenu.map((subItem,i) => (
-                          <div key={i} className="relative cursor-pointer">
-                            <Link
-                              key={subItem.title}
-                              to={subItem.href}
-                              className="flex items-center gap-x-4 group px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            >
-                              <div className='bg-white/5 p-2 rounded-md group-hover:bg-white duration-300 font-black text-blue-900'>
-                                DSI
-                              </div>
-                              <div className="flex flex-col items-start">
-                                <h6 className='font-semibold'>{subItem.title}</h6>
-                                <p className='text-sm text-gray-400'>{subItem.desc}</p>
-                              </div>
-                            </Link>
-                          </div>
-                        ))
-                      }
-                    </div>
-                  )} */}
                 </div>
               ))}
               <Link
@@ -213,19 +190,40 @@ const Navbar = () => {
         }`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
-          {menuItems.map((item) => (
-            <Link
-              key={item.title}
-              to={item.href}
-              className={`block px-4 py-3 rounded-lg text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50 transition-colors duration-300 ${
-                location.pathname === item.href
-                  ? "text-blue-900 bg-blue-50"
-                  : ""
-              }`}
-              onClick={closeMenu}
-            >
-              {item.title}
-            </Link>
+          {menuItems.map((item, index) => (
+            <div key={item.title}>
+              <div
+                className="flex justify-between items-center px-4 py-3 rounded-lg text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50 transition-colors duration-300 cursor-pointer"
+                onClick={() => {
+                  if (item.subMenu) {
+                    setOpenSubMenuIndex(openSubMenuIndex === index ? null : index);
+                  } else {
+                    closeMenu();
+                  }
+                }}
+              >
+                <span>{item.title}</span>
+                {item.subMenu && <ChevronDown className={`w-4 h-4 transform transition-transform ${openSubMenuIndex === index ? "rotate-180" : ""}`} />}
+              </div>
+
+              {item.subMenu && openSubMenuIndex === index && (
+                <div className="pl-6 pb-2 space-y-2 transition-all duration-300">
+                  {item.subMenu.map((subItem) => (
+                    <Link
+                      key={subItem.title}
+                      to={subItem.href}
+                      className="flex items-center px-4 py-3 rounded-lg text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50 transition-colors duration-300 cursor-pointer"
+                      onClick={closeMenu}
+                    >
+                      <div className="bg-white/5 pr-2 rounded-md group-hover:bg-white duration-300 font-black text-blue-900">
+                        DSI
+                      </div>
+                      {subItem.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
           <Link
             to="/contact"

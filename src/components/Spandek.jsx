@@ -192,7 +192,7 @@ const Spandek = () => {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group mb-8">
-            <span className="text-sm font-medium">Our Products</span>
+            <span className="text-sm font-medium">DSI Spandek</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 

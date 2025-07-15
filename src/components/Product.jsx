@@ -49,7 +49,7 @@ const Product = () => {
       link: "/brands/tray", 
     },
     {
-      title: "Interior Epoxy",
+      title: "Epoxy & Interior Epoxy",
       description:
         "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
       image: interiorImage,
@@ -131,9 +131,9 @@ const Product = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-slate-900">
+                  <h3 className="text-xl font-semibold text-slate-900 uppercase">
                     <Link to={product.link}>
-                      <span className="text-[#0000ff] mr-3">DSI</span>{product.title}
+                      <span className="text-[#0000ff] mr-1">PRODUCT</span>{product.title}
                     </Link>
                   </h3>
                   <p className="text-slate-600 leading-relaxed text-justify">
