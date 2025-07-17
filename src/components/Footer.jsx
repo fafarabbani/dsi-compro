@@ -27,9 +27,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
                 DSI Metal Tech
               </span>
             </div>
@@ -52,8 +52,8 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-semibold bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
               Quick Links
             </h3>
             <ul className="space-y-4">
@@ -71,21 +71,21 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-semibold bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
               Contact Us
             </h3>
             <ul className="space-y-4">
               <li className="flex items-center text-slate-300">
-                <Phone className="w-5 h-5 mr-3 text-violet-400" />
+                <Phone className="w-5 h-5 mr-3 text-blue-400" />
                 <span>(+62) 821-8685-5718</span>
               </li>
               <li className="flex items-center text-slate-300">
-                <Mail className="w-5 h-5 mr-3 text-violet-400" />
+                <Mail className="w-5 h-5 mr-3 text-blue-400" />
                 <span>dsimetaltech@gmail.com</span>
               </li>
               <li className="flex items-center text-slate-300">
-                <MapPin className="w-5 h-5 mr-3 text-violet-400" />
+                <MapPin className="w-5 h-5 mr-3 text-blue-400" />
                 <span>
                   Komp PT. Integrated Silicon Techology
                   <br />
@@ -96,8 +96,8 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-semibold bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
               Newsletter
             </h3>
             <p className="text-slate-300">
@@ -108,12 +108,12 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-violet-400 text-white placeholder-slate-400 transition-colors"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-blue-400 text-white placeholder-slate-400 transition-colors"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full px-4 py-3 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25"
+                className="w-full px-4 py-3 bg-gradient-to-r from-blue-900 to-indigo-600 hover:from-blue-600 hover:to-indigo-500 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/25"
               >
                 Subscribe
               </button>
@@ -128,11 +128,11 @@ const Footer = () => {
               <span>© {currentYear} </span>
               <a
                 href="/"
-                className="text-sm text-slate-400 hover:text-white transition-colors"
+                className="text-sm text-blue-900  transition-colors hover:underline font-semibold"
               >
-                PT. DSI Metal Technology.
+                PT. DSI Metal Technology
               </a>
-              <span> All rights reserved.</span>
+              <span>. All rights reserved.</span>
             </p>
             <div className="flex space-x-6">
               <a

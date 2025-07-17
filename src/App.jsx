@@ -50,7 +50,7 @@ const HomePage = () => (
     <Hero />
     <Dsi />
     <Product />
-    <About />
+    {/* <About /> */}
     <Contact />
   </>
 );

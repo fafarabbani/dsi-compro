@@ -229,7 +229,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium px-6 py-3 rounded-xl shadow-lg shadow-violet-600/20 hover:shadow-xl hover:shadow-violet-600/30 transition-all duration-200 transform hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:transform-none flex items-center justify-center"
+                className="w-full bg-gradient-to-r from-blue-900 to-indigo-600 text-white font-medium px-6 py-3 rounded-xl shadow-lg shadow-blue-600/20 hover:shadow-xl hover:shadow-blue-600/30 transition-all duration-200 transform hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:transform-none flex items-center justify-center"
               >
                 {isSubmitting ? (
                   <>
@@ -252,7 +252,7 @@ const Contact = () => {
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
                   Let's Build Something
-                  <span className="block mt-2 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+                  <span className="block mt-2 bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">
                     Awesome Together
                   </span>
                 </h2>
@@ -272,7 +272,7 @@ const Contact = () => {
 
                     <div className="relative flex items-start space-x-4">
                       <div className="flex-shrink-0">
-                        <div className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 text-white shadow-md">
+                        <div className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-r from-blue-900 to-indigo-600 text-white shadow-md">
                           <item.icon size={20} />
                         </div>
                       </div>

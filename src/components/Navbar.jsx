@@ -77,7 +77,7 @@ const Navbar = () => {
     //   gridCols: 2
     // },
     {
-      title: "News",
+      title: "Community",
       href: "#"
     },
     {
@@ -160,12 +160,12 @@ const Navbar = () => {
                   </Link>
                 </div>
               ))}
-              <Link
+              {/* <Link
                 to="/contact"
                 className="px-6 py-2.5 bg-gradient-to-r from-blue-900 to-indigo-600 text-white rounded-full font-medium text-sm hover:from-blue-800 hover:to-indigo-500 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-800/25"
               >
                 Get Started
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -225,13 +225,13 @@ const Navbar = () => {
               )}
             </div>
           ))}
-          <Link
+          {/* <Link
             to="/contact"
             className="block w-full mt-4 px-6 py-3 bg-gradient-to-r from-blue-900 to-indigo-600 text-white rounded-lg font-medium text-base hover:from-blue-800 hover:to-indigo-500 transition-all duration-300 text-center"
             onClick={closeMenu}
           >
             Get Started
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>

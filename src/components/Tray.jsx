@@ -4,116 +4,197 @@ import { useNavigate } from "react-router-dom";
 import LazyImage from "./LazyImage";
 import { Link } from 'react-router-dom';
 
-import straightLadderImage from '../assets/brands/tray/ladder/straight.png';
-import straightDuctImage from '../assets/brands/tray/duct/straight.png';
-import straightMeshImage from '../assets/brands/tray/mesh/straight.jpg';
-import straightPunchedImage from '../assets/brands/tray/punched/straight.jpg';
-import accessoriesImage from '../assets/brands/tray/accessories/accessories.png';
-import racewayImage from '../assets/brands/tray/raceway/raceway.png';
-import BestProduct from "./BestProduct";
+import cableTray1Image from '../assets/brands/tray/cabletray/cts1.jpg';
+import cableTray2Image from '../assets/brands/tray/cabletray/cts2.jpg';
+import cableTray3Image from '../assets/brands/tray/cabletray/cts3.jpg';
+import cableTray4Image from '../assets/brands/tray/cabletray/cts4.jpg';
+import cableTray5Image from '../assets/brands/tray/cabletray/cts5.jpg';
+import cableTray6Image from '../assets/brands/tray/cabletray/cts6.jpg';
+import cableTray7Image from '../assets/brands/tray/cabletray/cts7.jpg';
+import cableTray8Image from '../assets/brands/tray/cabletray/cts8.jpg';
+import cableTray9Image from '../assets/brands/tray/cabletray/cts9.jpg';
+import cableTray10Image from '../assets/brands/tray/cabletray/cts10.jpg';
+import cableTray11Image from '../assets/brands/tray/cabletray/cts11.jpg';
+import cableTray12Image from '../assets/brands/tray/cabletray/cts12.jpg';
+import posmacTray1Image from '../assets/brands/tray/posmactray/pro7_re_01.jpg';
+import posmacTray2Image from '../assets/brands/tray/posmactray/pro7_re_02.jpg';
+import posmacTray3Image from '../assets/brands/tray/posmactray/pro7_re_03.jpg';
+import aluminiumTray1Image from '../assets/brands/tray/aluminiumtray/pro5_01.jpg';
+import aluminiumTray2Image from '../assets/brands/tray/aluminiumtray/pro5_02.jpg';
+import aluminiumTray3Image from '../assets/brands/tray/aluminiumtray/pro5_03.jpg';
+import aluminiumTray4Image from '../assets/brands/tray/aluminiumtray/pro5_04.jpg';
+import aluminiumTray5Image from '../assets/brands/tray/aluminiumtray/pro5_05.jpg';
+import cableDuct1Image from '../assets/brands/tray/cableduct/pro2_01.jpg';
+import cableDuct2Image from '../assets/brands/tray/cableduct/pro2_02.jpg';
+import cableDuct3Image from '../assets/brands/tray/cableduct/pro2_03.jpg';
+import cableDuct4Image from '../assets/brands/tray/cableduct/pro2_04.jpg';
+import cableDuct5Image from '../assets/brands/tray/cableduct/pro2_05.jpg';
+import cableDuct6Image from '../assets/brands/tray/cableduct/pro2_06.jpg';
+import cableDuct7Image from '../assets/brands/tray/cableduct/pro2_07.jpg';
+import punchedTrayImage from '../assets/brands/tray/punchedtray/pro3.jpg';
+import meshTray1Image from '../assets/brands/tray/meshtray/pro8_01.jpg';
+import meshTray2Image from '../assets/brands/tray/meshtray/pro8_02.jpg';
+import raceWay1Image from '../assets/brands/tray/raceway/pro4_01.jpg';
+import raceWay2Image from '../assets/brands/tray/raceway/pro4_02.jpg';
+import raceWay3Image from '../assets/brands/tray/raceway/pro4_03.jpg';
+import raceWay4Image from '../assets/brands/tray/raceway/pro4_04.jpg';
+import raceWay5Image from '../assets/brands/tray/raceway/pro4_05.jpg';
+import hitecTray1Image from '../assets/brands/tray/hitectray/pro9_01.jpg';
+import hitecTray2Image from '../assets/brands/tray/hitectray/pro9_02.jpg';
+import hitecTray3Image from '../assets/brands/tray/hitectray/pro9_03.jpg';
+import hitecTray4Image from '../assets/brands/tray/hitectray/pro9_04.jpg';
+import hitecTray5Image from '../assets/brands/tray/hitectray/pro9_05.jpg';
+import hitecTray6Image from '../assets/brands/tray/hitectray/pro9_06.jpg';
+import chanelSupport1Image from '../assets/brands/tray/chanelsupport/pro9_01.jpg';
+import chanelSupport2Image from '../assets/brands/tray/chanelsupport/pro9_02.jpg';
+import chanelSupport3Image from '../assets/brands/tray/chanelsupport/pro9_03.jpg';
+import chanelSupport4Image from '../assets/brands/tray/chanelsupport/pro9_04.jpg';
+import chanelSupport5Image from '../assets/brands/tray/chanelsupport/pro9_05.jpg';
+import chanelSupport6Image from '../assets/brands/tray/chanelsupport/pro9_06.jpg';
 
 
 const Tray = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Cable Tray");
   const navigate = useNavigate();
 
   const categories = 
   [
-    "All", 
-    "Ladder Tray", 
+    // "All", 
+    "Cable Tray", 
+    "Posmac Tray", 
+    "Stainless Steel Tray", 
+    "Aluminium Tray", 
     "Cable Duct", 
-    "Mesh Tray", 
     "Punched Tray", 
-    // "Chanel Support", 
-    "Accessories", 
-    "Race Way System", 
+    "Mesh Tray", 
+    "Race Way", 
+    "Hi-Tec Tray", 
+    "Chanel Support", 
   ];
 
   const projects = [
 
     {
-      title: "Ladder Type",
-      image: straightLadderImage,
-      category: "Ladder Tray",
+      title: "Cable Tray Type",
+      images: [
+          cableTray1Image,
+          cableTray2Image,
+          cableTray3Image,
+          cableTray4Image,
+          cableTray5Image,
+          cableTray6Image,
+          cableTray7Image,
+          cableTray8Image,
+          cableTray9Image,
+          cableTray10Image,
+          cableTray11Image,
+          cableTray12Image,
+        ],
+      category: "Cable Tray",
       info: "H100 x L3000 x 20F",
-      materials: ["Posmac", "Stainless Steel", "Aluminium"],
-      finishes: ["Hot-Dip Galvanized", "Powder Coating"],
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
+    },
+    {
+      title: "Posmac Tray Type",
+      images: [
+          posmacTray1Image,
+          posmacTray2Image,
+          posmacTray3Image,
+        ],
+      category: "Posmac Tray",
+      info: "H100 x L3000 x 2.0T",
+    },
+    {
+      title: "Stainless Steel Tray Type",
+      images: [
+          aluminiumTray1Image,
+          aluminiumTray2Image,
+          aluminiumTray3Image,
+          aluminiumTray4Image,
+          aluminiumTray5Image,
+        ],
+      category: "Stainless Steel Tray",
+      info: "H100 x L3000 x 2.0T",
+    },
+    {
+      title: "Aluminium Tray Type",
+      images: [
+          aluminiumTray1Image,
+          aluminiumTray2Image,
+          aluminiumTray3Image,
+          aluminiumTray4Image,
+          aluminiumTray5Image,
+        ],
+      category: "Aluminium Tray",
+      info: "H100 x L3000 x 2.0T",
     },
     {
       title: "Cable Duct Type",
-      image: straightDuctImage,
+      images: [
+          cableDuct1Image,
+          cableDuct2Image,
+          cableDuct3Image,
+          cableDuct4Image,
+          cableDuct5Image,
+          cableDuct6Image,
+          cableDuct7Image,
+        ],
       category: "Cable Duct",
-      info: "H100 x L3000 x 20F",
-      materials: ["Posmac", "Stainless Steel", "Aluminium"],
-      finishes: ["Hot-Dip Galvanized", "Powder Coating"],
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
+      info: "H100 x L3000 x 2.0T",
     },
     {
-      title: "Mesh Type",
-      image: straightMeshImage,
-      category: "Mesh Tray",
-      info: "H100 x L3000 x 20F",
-      materials: ["Posmac", "Stainless Steel", "Aluminium"],
-      finishes: ["Hot-Dip Galvanized", "Powder Coating"],
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    {
-      title: "Punched Type",
-      image: straightPunchedImage,
+      title: "Punched Tray Type",
+      images: [
+          punchedTrayImage,
+        ],
       category: "Punched Tray",
-      info: "H100 x L3000 x 20F",
-      materials: ["Posmac", "Stainless Steel", "Aluminium"],
-      finishes: ["Hot-Dip Galvanized", "Powder Coating"],
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
-    },
-    // {
-    //   title: "Chanel Support",
-    //   image: straightLadderImage,
-    //   category: "Chanel Support",
-    //   info: "H100 x L3000 x 20F",
-    //   materials: ["Posmac", "Stainless Steel", "Aluminium"],
-    //   finishes: ["Hot-Dip Galvanized", "Powder Coating"],
-    //   details: [ ],
-    //   limits: [ ],
-    //   prices: [ ],
-    //   informations: [],
-    // },
-    {
-      title: "Accessories",
-      image: accessoriesImage,
-      category: "Accessories",
-      info: "H100 x L3000 x 20F",
-      materials: ["Posmac", "Stainless Steel", "Aluminium"],
-      finishes: ["Hot-Dip Galvanized", "Powder Coating"],
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
+      info: "H100 x L3000 x 2.0T",
     },
     {
-      title: "Race Way System",
-      image: racewayImage,
-      category: "Race Way System",
-      info: "H100 x L3000 x 20F",
-      materials: ["Posmac", "Stainless Steel", "Aluminium"],
-      finishes: ["Hot-Dip Galvanized", "Powder Coating"],
-      details: [ ],
-      limits: [ ],
-      prices: [ ],
-      informations: [],
+      title: "Mesh Tray Type",
+      images: [
+          meshTray1Image,
+          meshTray2Image,
+        ],
+      category: "Mesh Tray",
+      info: "H100 x L3000 x 2.0T",
+    },
+    {
+      title: "Race Way Type",
+      images: [
+          raceWay1Image,
+          raceWay2Image,
+          raceWay3Image,
+          raceWay4Image,
+          raceWay5Image,
+        ],
+      category: "Race Way",
+      info: "H100 x L3000 x 2.0T",
+    },
+    {
+      title: "Hi-Tec Tray Type",
+      images: [
+          hitecTray1Image,
+          hitecTray2Image,
+          hitecTray3Image,
+          hitecTray4Image,
+          hitecTray5Image,
+          hitecTray6Image,
+        ],
+      category: "Hi-Tec Tray",
+      info: "H100 x L3000 x 2.0T",
+    },
+    {
+      title: "Chanel Support Type",
+      images: [
+          chanelSupport1Image,
+          chanelSupport2Image,
+          chanelSupport3Image,
+          chanelSupport4Image,
+          chanelSupport5Image,
+          chanelSupport6Image,
+        ],
+      category: "Chanel Support",
+      info: "H100 x L3000 x 2.0T",
     },
 
   ];
@@ -180,51 +261,27 @@ const Tray = () => {
         </div>
 
         {/* Projects grid */}
-        <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1">
           {projects
             .filter(
               (project) =>
-                activeFilter === "All" || project.category === activeFilter
+                project.category === activeFilter
             )
             .map((project) => (
               <div
                 key={project.title}
-                className="group relative bg-white  rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500"
+                className="group relative bg-white  rounded-2xl shadow-xl  transition-all duration-500"
               >
                 {/* Project image using LazyImage */}
-                <div className="relative aspect-[16/9] overflow-hidden rounded-t-2xl">
-                  <LazyImage
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-
-                {/* Project info */}
-                <div className="p-8 flex flex-col justify-start">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-950">
-                      {/* {project.category} */}
-                      DSI Product
-                    </span>
-                  </div>
-                  
-                  <button
-                    className="inline-flex text-base font-bold text-blue-900 py-3 cursor-pointer"
-                    onClick={() => handleViewDetails(project)}
-                  >
-                    {project.title}
-                  </button>
-
-                  <div className="inline-flex text-sm font-bold text-black pb-10 cursor-pointer"></div>
-
-                  <button
-                    className="inline-flex items-center gap-2 text-blue-900 hover:text-blue-700 font-medium group"
-                    onClick={() => handleViewDetails(project)}  // Trigger the navigation on click
-                  >
-                    View Details
-                    <ArrowUpRight className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </button>
+                <div className="relative overflow-hidden rounded-t-2xl">
+                  {project.images.map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`${project.title} ${index + 1}`}
+                      className="w-full h-full object-cover transform transition-transform duration-500"
+                    />
+                  ))}
                 </div>
               </div>
             ))}

@@ -1,37 +1,8 @@
 import React from "react";
 import { Rocket, Eye, Users, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const About = () => {
-  const features = [
-    {
-      title: "Our Mission",
-      description:
-        "To empower businesses with innovative digital solutions that drive growth and success.",
-      icon: Rocket,
-      gradient: "from-blue-900 to-indigo-600",
-    },
-    {
-      title: "Our Vision",
-      description:
-        "To be the catalyst for digital transformation, setting new benchmarks in innovation worldwide.",
-      icon: Eye,
-      gradient: "from-indigo-600 to-blue-600",
-    },
-    {
-      title: "Our Values",
-      description:
-        "Built on innovation, integrity, and excellence. These core values guide our every decision.",
-      icon: Users,
-      gradient: "from-blue-600 to-sky-600",
-    },
-  ];
-
-  const stats = [
-    { number: "15+", label: "Years Experience" },
-    { number: "1000+", label: "Projects Delivered" },
-    { number: "98%", label: "Client Satisfaction" },
-    { number: "100+", label: "Expert Team" },
-  ];
 
   return (
     <section className="relative py-32 bg-slate-50">
@@ -54,12 +25,15 @@ const About = () => {
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 lg:text-6xl">
             <span className=" mt-2 bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">
-              DSI Metal Technology
+              DSI
             </span>
           </h2>
 
           <div className="mt-6 text-xl text-slate-600 leading-relaxed text-justify">
             <p>
+              Welcome to <span className="font-semibold bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">DSI</span>, the leading solution for your construction and interior design needs. We provide high-quality products, from innovative building materials to stunning interior designs. With the best experience and service, we are ready to make your dream project a reality, from the planning stage to execution.
+            </p>
+            <p className="my-2">
               PT. DSI Metal Technology Batam Indonesia strives to be a "Global Company with the Highest Quality". To achieve this, we will continue to strive to be trusted and provide real added value to our customers' businesses.
             </p>
             <p className="my-2">
@@ -68,6 +42,49 @@ const About = () => {
             <p>
               The company primarily focuses on providing professional services in the fields of industrial plants, shipyards, marine and land services.
             </p>
+          </div>
+
+          <h2 className="text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl mt-12">
+            <span className=" mt-2 bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">
+              Our Mission
+            </span>
+          </h2>
+
+          <div className="mt-6 text-xl text-slate-600 leading-relaxed text-justify">
+            <p className="text-gray-700 text-xl">
+              At DSI, our mission is to provide innovative construction and interior solutions that are accessible to everyone. We are committed to delivering high-quality products that not only meet needs but also create functional and aesthetically pleasing spaces. With competitive pricing, fast delivery and service, we are ready to support you in realizing your dream project with the utmost care.
+            </p>
+          </div>
+          
+          <h2 className="text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl mt-12">
+            <span className=" mt-2 bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">
+              Why Choose DSI?
+            </span>
+          </h2>
+
+          <div className="mt-6 text-xl text-slate-600 leading-relaxed text-justify">
+          <ul className="list-disc pl-6 text-gray-700 space-y-2">
+            <li>Best Quality: Superior construction and interior products that meet the highest standards.</li>
+            <li>Best Price: Efficient and affordable solutions for every project.</li>
+            <li>Best Warranty: Provides peace of mind with a warranty that backs your confidence.</li>
+            <li>Fast & Responsive Service: Our team is ready to help with reliable customer support.</li>
+            <li>Easy Purchasing Process: Convenient shopping, from product selection to seamless delivery.</li>
+          </ul>
+          </div>
+
+          <h2 className="text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl mt-12">
+            <span className=" mt-2 bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">
+              Join the DSI Community
+            </span>
+          </h2>
+
+          <div className="mt-6 text-xl text-slate-600 leading-relaxed text-center">
+            <p className="text-gray-700 text-xl mb-8">
+              Whether you are a professional in the construction industry, or an interior design enthusiast, DSI Metal Technology offers innovative manufacturing solutions to meet your needs.
+            </p>
+            <Link to={'/products'}><button className="bg-gradient-to-r from-blue-900 to-indigo-600 hover:from-blue-600 hover:to-indigo-500 text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/25">
+              Start Shopping
+            </button></Link> 
           </div>
         </div>
 

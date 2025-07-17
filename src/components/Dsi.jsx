@@ -26,7 +26,7 @@ const Dsi = () => {
 
       {/* DSI 2 - Teks */}
       <div className="w-full lg:w-3/5 gap-5">
-          <div className="flex items-center justify-start">
+          <div className="flex items-center justify-center md:justify-start">
             <div className="flex justify-between -mt-5">
               <span className="text-lg lg:text-xl font-black tracking-tight bg-black bg-clip-text text-transparent">PT.</span>
             </div>

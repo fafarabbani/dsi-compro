@@ -19,7 +19,7 @@ const Product = () => {
     {
       title: "Louver Steel Panel",
       description:
-        "Our Louvered Steel Plate is crafted exclusively from 100% high-quality Korean materials, provides reliable, long-lasting protection and efficiency, standing out as a superior choice in the market.",
+        "Designed for ventilation and building aesthetics, Our Louvered Steel Plate are made from premium Korean steel that is resistant to corrosion and extreme weather, providing a modern look with long-term durability.",
       image: louverImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
       link: "/brands/spandek", 
@@ -35,7 +35,7 @@ const Product = () => {
     {
       title: "Spandek Steel Panel",
       description:
-        "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
+        "A tough, lightweight, and easy-to-install roofing and wall solution. Made with high-quality Korean materials, it guarantees resistance to loads, high temperatures, and tropical weather conditions.",
       image: spandekImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
       link: "/brands/spandek", 
@@ -43,7 +43,7 @@ const Product = () => {
     {
       title: "Cable Tray",
       description:
-        "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
+        "Our cable trays use Posmac material—a Korean innovation that offers corrosion resistance up to 5–10 times higher than conventional galvanized steel. Ideal for industrial cable management and modern infrastructure projects.",
       image: cableImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
       link: "/brands/tray", 
@@ -51,7 +51,7 @@ const Product = () => {
     {
       title: "Epoxy & Interior Epoxy",
       description:
-        "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
+        "High-quality epoxy-based floor and interior coatings that provide maximum protection against abrasion, chemicals, and moisture. Suitable for industrial, commercial, and residential areas.",
       image: interiorImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
       link: "/products", 
@@ -59,7 +59,7 @@ const Product = () => {
     {
       title: "Resin Epoxy",
       description:
-        "Our Zinc Steel Panel is made from 100% premium Korean materials, offering exceptional strength and durability. Its flexible design ensures easy installation and adaptability for various projects.",
+        "A high-performance resin with a Korean formula that provides strong adhesion and a precise finish. Available for a variety of industrial and interior applications.",
       image: resinImage,
       features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
       link: "/products", 
