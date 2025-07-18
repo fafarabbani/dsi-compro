@@ -45,12 +45,12 @@ import hitecTray3Image from '../assets/brands/tray/hitectray/pro9_03.jpg';
 import hitecTray4Image from '../assets/brands/tray/hitectray/pro9_04.jpg';
 import hitecTray5Image from '../assets/brands/tray/hitectray/pro9_05.jpg';
 import hitecTray6Image from '../assets/brands/tray/hitectray/pro9_06.jpg';
-import chanelSupport1Image from '../assets/brands/tray/chanelsupport/pro9_01.jpg';
-import chanelSupport2Image from '../assets/brands/tray/chanelsupport/pro9_02.jpg';
-import chanelSupport3Image from '../assets/brands/tray/chanelsupport/pro9_03.jpg';
-import chanelSupport4Image from '../assets/brands/tray/chanelsupport/pro9_04.jpg';
-import chanelSupport5Image from '../assets/brands/tray/chanelsupport/pro9_05.jpg';
-import chanelSupport6Image from '../assets/brands/tray/chanelsupport/pro9_06.jpg';
+import chanelSupport1Image from '../assets/brands/tray/chanelsupport/pro6_01.jpg';
+import chanelSupport2Image from '../assets/brands/tray/chanelsupport/pro6_02.jpg';
+import chanelSupport3Image from '../assets/brands/tray/chanelsupport/pro6_03.jpg';
+import chanelSupport4Image from '../assets/brands/tray/chanelsupport/pro6_04.jpg';
+import chanelSupport5Image from '../assets/brands/tray/chanelsupport/pro6_05.jpg';
+import chanelSupport6Image from '../assets/brands/tray/chanelsupport/pro6_06.jpg';
 
 
 const Tray = () => {

@@ -8,7 +8,7 @@ import threeLouverImage from '../assets/product/louver/seven/3.jpg';
 import fourLouverImage from '../assets/product/louver/seven/4.jpg';
 import fiveLouverImage from '../assets/product/louver/seven/5.jpg';
 import oneZincImage from '../assets/product/zinc/360/1.jpg';
-import oneSpandekImage from '../assets/product/spandek/250/1.jpg';
+import oneSpandekImage from '../assets/brands/spandek/spandek/1.png';
 
 const DetailsSpandek = () => {
   const location = useLocation();

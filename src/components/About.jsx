@@ -82,9 +82,9 @@ const About = () => {
             <p className="text-gray-700 text-xl mb-8">
               Whether you are a professional in the construction industry, or an interior design enthusiast, DSI Metal Technology offers innovative manufacturing solutions to meet your needs.
             </p>
-            <Link to={'/products'}><button className="bg-gradient-to-r from-blue-900 to-indigo-600 hover:from-blue-600 hover:to-indigo-500 text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/25">
+            {/* <Link to={'/products'}><button className="bg-gradient-to-r from-blue-900 to-indigo-600 hover:from-blue-600 hover:to-indigo-500 text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/25">
               Start Shopping
-            </button></Link> 
+            </button></Link>  */}
           </div>
         </div>
 

@@ -36,19 +36,19 @@ const Navbar = () => {
       subMenu: [
         {
           title: "Spandek",
-          desc: "Description A",
+          desc: "ISO : ",
           // href: "",
           href: "/brands/spandek"
         },
         {
           title: "Tray",
-          desc: "Description B",
+          desc: "ISO : ",
           // href: "",
           href: "/brands/tray"
         },
         {
           title: "Epoxy",
-          desc: "Description B",
+          desc: "ISO : ",
           href: ""
         },
       ],
@@ -142,7 +142,7 @@ const Navbar = () => {
                               </div>
                               <div className="flex flex-col items-start">
                                 <h6 className="font-semibold">{subItem.title}</h6>
-                                <p className="text-sm text-gray-400">{subItem.desc}</p>
+                                <p className="text-xs text-gray-400">{subItem.desc}</p>
                               </div>
                             </Link>
                           ))}

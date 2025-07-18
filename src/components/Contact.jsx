@@ -9,13 +9,13 @@ import {
   CheckCircle2,
   XCircle,
 } from "lucide-react";
+// import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
     email: "",
     phone: "",
     message: "",
@@ -59,8 +59,7 @@ const Contact = () => {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       setSubmitStatus("success");
       setFormData({
-        firstName: "",
-        lastName: "",
+        fullName: "",
         email: "",
         phone: "",
         message: "",
@@ -130,43 +129,24 @@ const Contact = () => {
               className="space-y-4"
               aria-labelledby="contact-form-title"
             >
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label
-                    htmlFor="firstName"
-                    className="block text-sm font-medium text-slate-700 mb-1"
-                  >
-                    First Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    id="firstName"
-                    name="firstName"
-                    type="text"
-                    required
-                    value={formData.firstName}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-violet-600 focus:border-transparent transition-all duration-200"
-                    placeholder="First Name"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="lastName"
-                    className="block text-sm font-medium text-slate-700 mb-1"
-                  >
-                    Last Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    id="lastName"
-                    name="lastName"
-                    type="text"
-                    required
-                    value={formData.lastName}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-violet-600 focus:border-transparent transition-all duration-200"
-                    placeholder="Last Name"
-                  />
-                </div>
+
+              <div>
+                <label
+                  htmlFor="fullName"
+                  className="block text-sm font-medium text-slate-700 mb-1"
+                >
+                  Full Name <span className="text-red-500">*</span>
+                </label>
+                <input
+                  id="fullName"
+                  name="fullName"
+                  type="text"
+                  required
+                  value={formData.fullName}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-violet-600 focus:border-transparent transition-all duration-200"
+                  placeholder="Enter your fullname"
+                />
               </div>
 
               <div>
@@ -184,7 +164,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-violet-600 focus:border-transparent transition-all duration-200"
-                  placeholder="john@example.com"
+                  placeholder="Enter your email"
                 />
               </div>
 
@@ -203,7 +183,7 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={handleInputChange}
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-violet-600 focus:border-transparent transition-all duration-200"
-                  placeholder="(123) 456-7890"
+                  placeholder="Enter your phone number"
                 />
               </div>
 

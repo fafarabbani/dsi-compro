@@ -38,15 +38,19 @@ const Spandek = () => {
         { label: "Width", value: "396.5 mm" },
         { label: "Length", value: "min 900 mm" },
         { label: "Corner", value: "Lock" },
+        { label: "Garansi", value: "25 Years" },
       ],
       prices: [
-        { label: "Size 0,4 mm x 1 m", value: "245.000"},
-        { label: "Size 0,51 mm x 1 m", value: "280.000"},
+        { label: "Size 0,4 mm x 1 m", value: "175.000"},
+        { label: "Size 0,51 mm x 1 m", value: "195.000"},
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
+        { label: "Customer Order", value: "2-3 weeks" },
       ],
+      color: [
+        "White", "Blue", "Grey", "Charcoal", "Silver"
+      ]
     },
 
     {
@@ -62,16 +66,20 @@ const Spandek = () => {
         { label: "Width", value: "345 mm" },
         { label: "Length", value: "900 mm" },
         { label: "Corner", value: "Var" },
+        { label: "Garansi", value: "36 Years" },
       ],
       prices: [
-        { label: "B2B Price", value: "300.000", unit: " per m²"  },
-        { label: "Agent Price", value: "325.000", unit: " per m²"  },
-        { label: "Market Price", value: "555.000", unit: " per m²"  },
+        { label: "B2B Price", value: "275.000", unit: " per m²"  },
+        { label: "Agent Price", value: "305.000", unit: " per m²"  },
+        { label: "Market Price", value: "410.000", unit: " per m²"  },
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
+        { label: "Customer Order", value: "2 weeks" },
       ],
+      color: [
+        
+      ]
     },
     {
       title: "Louver Steel Panel 4 Ribs",
@@ -86,16 +94,20 @@ const Spandek = () => {
         { label: "Width", value: "345 mm" },
         { label: "Length", value: "900 mm" },
         { label: "Corner", value: "Var" },
+        { label: "Garansi", value: "36 Years" },
       ],
       prices: [
-        { label: "B2B Price", value: "300.000", unit: " per m²"  },
-        { label: "Agent Price", value: "325.000", unit: " per m²"  },
-        { label: "Market Price", value: "555.000", unit: " per m²"  },
+        { label: "B2B Price", value: "275.000", unit: " per m²"  },
+        { label: "Agent Price", value: "305.000", unit: " per m²"  },
+        { label: "Market Price", value: "410.000", unit: " per m²"  },
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
+        { label: "Customer Order", value: "2 weeks" },
       ],
+      color: [
+        
+      ]
     },
     {
       title: "Louver Steel Panel 3 Ribs",
@@ -110,16 +122,20 @@ const Spandek = () => {
         { label: "Width", value: "345 mm" },
         { label: "Length", value: "900 mm" },
         { label: "Corner", value: "Var" },
+        { label: "Garansi", value: "36 Years" },
       ],
       prices: [
-        { label: "B2B Price", value: "300.000", unit: " per m²"  },
-        { label: "Agent Price", value: "325.000", unit: " per m²"  },
-        { label: "Market Price", value: "555.000", unit: " per m²"  },
+        { label: "B2B Price", value: "275.000", unit: " per m²"  },
+        { label: "Agent Price", value: "305.000", unit: " per m²"  },
+        { label: "Market Price", value: "410.000", unit: " per m²"  },
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
+        { label: "Customer Order", value: "2 weeks" },
       ],
+      color: [
+        
+      ]
     },
 
     {
@@ -135,16 +151,20 @@ const Spandek = () => {
         { label: "Width", value: "396.5 mm" },
         { label: "Length", value: "min 900 mm" },
         { label: "Corner", value: "Lock" },
+        { label: "Garansi", value: "36 Years" },
       ],
       prices: [
-        { label: "B2B Price", value: "270.000", unit: " per m²"  },
-        { label: "Agent Price", value: "295.000", unit: " per m²"  },
-        { label: "Market Price", value: "450.000", unit: " per m²"  },
+        { label: "B2B Price", value: "245.000", unit: " per m²"  },
+        { label: "Agent Price", value: "275.000", unit: " per m²"  },
+        { label: "Market Price", value: "380.000", unit: " per m²"  },
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
+        { label: "Customer Order", value: "3 weeks" },
       ],
+      color: [
+        
+      ]
     },
     {
       title: "Zinc Steel Panel 450 Width",
@@ -159,16 +179,20 @@ const Spandek = () => {
         { label: "Width", value: "396.5 mm" },
         { label: "Length", value: "min 900 mm" },
         { label: "Corner", value: "Lock" },
+        { label: "Garansi", value: "36 Years" },
       ],
       prices: [
-        { label: "B2B Price", value: "270.000", unit: " per m²"  },
-        { label: "Agent Price", value: "295.000", unit: " per m²"  },
-        { label: "Market Price", value: "450.000", unit: " per m²"  },
+        { label: "B2B Price", value: "245.000", unit: " per m²"  },
+        { label: "Agent Price", value: "275.000", unit: " per m²"  },
+        { label: "Market Price", value: "380.000", unit: " per m²"  },
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order Size", value: "Start 1m until 30m" },
+        { label: "Customer Order", value: "3 weeks" },
       ],
+      color: [
+        
+      ]
     },
 
   ];
