@@ -2,52 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ExternalLink, ArrowUpRight, Code } from "lucide-react";
 
-import oneLouverImage from '../assets/product/louver/seven/1.jpeg';
-import twoLouverImage from '../assets/product/louver/seven/2.jpg';
-import threeLouverImage from '../assets/product/louver/seven/3.jpg';
-import fourLouverImage from '../assets/product/louver/seven/4.jpg';
-import fiveLouverImage from '../assets/product/louver/seven/5.jpg';
-import oneZincImage from '../assets/product/zinc/360/1.jpg';
-import oneSpandekImage from '../assets/product/spandek/250/1.jpg';
-import onePosmacImage from '../assets/product/cable/posmac/1.png';
-import twoPosmacImage from '../assets/product/cable/posmac/2.jpg';
-import threePosmacImage from '../assets/product/cable/posmac/3.jpg';
-import fourPosmacImage from '../assets/product/cable/posmac/4.jpg';
-import fivePosmacImage from '../assets/product/cable/posmac/5.jpg';
-import oneAluminiumImage from '../assets/product/cable/aluminium/1.png';
-import twoAluminiumImage from '../assets/product/cable/aluminium/2.jpg';
-import threeAluminiumImage from '../assets/product/cable/aluminium/3.jpg';
-import fourAluminiumImage from '../assets/product/cable/aluminium/4.jpg';
-import fiveAluminiumImage from '../assets/product/cable/aluminium/5.jpg';
-import oneHdgcableImage from '../assets/product/cable/hdgcable/1.png';
-import twoHdgcableImage from '../assets/product/cable/hdgcable/2.jpg';
-import threeHdgcableImage from '../assets/product/cable/hdgcable/3.jpg';
-import fourHdgcableImage from '../assets/product/cable/hdgcable/4.jpg';
-import fiveHdgcableImage from '../assets/product/cable/hdgcable/5.jpg';
-import oneGicableImage from '../assets/product/cable/gicable/1.png';
-import twoGicableImage from '../assets/product/cable/gicable/2.jpg';
-import threeGicableImage from '../assets/product/cable/gicable/3.jpg';
-import fourGicableImage from '../assets/product/cable/gicable/4.jpg';
-import fiveGicableImage from '../assets/product/cable/gicable/5.jpg';
-import oneHdgladderImage from '../assets/product/cable/hdgladder/1.png';
-import twoHdgladderImage from '../assets/product/cable/hdgladder/2.jpg';
-import threeHdgladderImage from '../assets/product/cable/hdgladder/3.jpg';
-import fourHdgladderImage from '../assets/product/cable/hdgladder/4.jpg';
-import fiveHdgladderImage from '../assets/product/cable/hdgladder/5.jpg';
-import onePccableImage from '../assets/product/cable/pccable/1.png';
-import twoPccableImage from '../assets/product/cable/pccable/2.jpg';
-import threePccableImage from '../assets/product/cable/pccable/3.jpg';
-import fourPccableImage from '../assets/product/cable/pccable/4.jpg';
-import fivePccableImage from '../assets/product/cable/pccable/5.jpg';
-import oneAccessoriesImage from '../assets/product/cable/accessories/1.png';
-import twoAccessoriesImage from '../assets/product/cable/accessories/2.jpg';
-import threeAccessoriesImage from '../assets/product/cable/accessories/3.jpg';
-import fourAccessoriesImage from '../assets/product/cable/accessories/4.jpg';
-import fiveAccessoriesImage from '../assets/product/cable/accessories/5.jpg';
+import oneLouverImage from '../../../assets/brands/spandek/louver/seven/1.jpeg';
+import twoLouverImage from '../../../assets/brands/spandek/louver/seven/2.jpg';
+import threeLouverImage from '../../../assets/brands/spandek/louver/seven/3.jpg';
+import fourLouverImage from '../../../assets/brands/spandek/louver/seven/4.jpg';
+import fiveLouverImage from '../../../assets/brands/spandek/louver/seven/5.jpg';
+import oneZincImage from '../../../assets/brands/spandek/zinc/360/1.jpg';
+import oneSpandekImage from '../../../assets/brands/spandek/spandek/5.png';
 
-const DetailsProduct = () => {
+const DetailSpandek = () => {
   const location = useLocation();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
 
   // Ambil data project yang dikirimkan dari Products
   const project = location.state?.project;
@@ -72,62 +38,6 @@ const DetailsProduct = () => {
     } else if (project.category === "Spandek Steel Panel") {
       images = [
         oneSpandekImage,
-      ];
-    } else if (project.category === "Ladder Tray") {
-      images = [
-        onePosmacImage,
-        twoPosmacImage,
-        threePosmacImage,
-        fourPosmacImage,
-        fivePosmacImage
-      ];
-    } else if (project.category === "Cable Duct") {
-      images = [
-        oneAluminiumImage,
-        twoAluminiumImage,
-        threeAluminiumImage,
-        fourAluminiumImage,
-        fiveAluminiumImage
-      ];
-    } else if (project.category === "Mesh Tray") {
-      images = [
-        oneHdgcableImage,
-        twoHdgcableImage,
-        threeHdgcableImage,
-        fourHdgcableImage,
-        fiveHdgcableImage
-      ];
-    } else if (project.category === "Punched Tray") {
-      images = [
-        oneGicableImage,
-        twoGicableImage,
-        threeGicableImage,
-        fourGicableImage,
-        fiveGicableImage
-      ];
-    } else if (project.category === "Hi-Tec Tray System") {
-      images = [
-        oneHdgladderImage,
-        twoHdgladderImage,
-        threeHdgladderImage,
-        fourHdgladderImage,
-        fiveHdgladderImage
-      ];
-    } else if (project.category === "Race Way System") {
-      images = [
-        onePccableImage,
-        twoPccableImage,
-        threePccableImage,
-        fourPccableImage,
-        fivePccableImage
-      ];
-    } else if (project.category === "Chanel Support System (Accessories)") {
-      images = [
-        oneAccessoriesImage,
-        twoAccessoriesImage,
-        threeAccessoriesImage,
-        fourAccessoriesImage,
-        fiveAccessoriesImage
       ];
     }
     // Kamu bisa menambahkan kategori lainnya sesuai dengan data yang ada
@@ -235,14 +145,26 @@ const DetailsProduct = () => {
           </div>
         </div>
 
+        {/* DSI 1 - Image */}
         <div className="flex justify-between gap-10">
-          {/* DSI 1 - Gambar */}
-          <div className="w-2/5">
-                <img
-                  src={project?.image}
-                  alt=""
-                  className="rounded-lg"
-                />
+          <div className='flex gap-4 items-center'>
+            <div className='flex flex-col gap-4'>
+                {project?.image?.slice(0, 5).map((imgSrc, index) => (
+                  <div key={index}>
+                    <img
+                      className="rounded-lg cursor-pointer"
+                      src={imgSrc}
+                      width={100}
+                      height={100}
+                      onMouseOver={() => setCurrentImage(index)}
+                      alt={project?.color?.[index] || `Image ${index + 1}`}
+                    />
+                  </div>
+                ))}
+            </div>
+                <div>
+                  <img className="rounded-lg" src={project?.image[currentImage]} width={480} height={480} alt={project?.color[currentImage]} />
+              </div>
           </div>
     
           {/* DSI 2 - Teks */}
@@ -317,4 +239,4 @@ const DetailsProduct = () => {
   );
 };
 
-export default DetailsProduct;
+export default DetailSpandek;

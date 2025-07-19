@@ -1,15 +1,42 @@
 import React, { useState } from "react";
 import { ExternalLink, ArrowUpRight, Code } from "lucide-react";
 import { useNavigate } from "react-router-dom"; 
-import LazyImage from "./LazyImage";
-import { Link } from 'react-router-dom';
+import LazyImage from "../../components/LazyImage"; 
 
-import sevenImage from '../assets/product/louver/seven/one.png';
-import FourImage from '../assets/product/louver/four/one.png';
-import ThreeImage from '../assets/product/louver/three/one.png';
-import zinc360Image from '../assets/product/zinc/360/one.png';
-import zinc450Image from '../assets/product/zinc/450/one.png';
-import spandekImage from '../assets/product/spandek/250/one.png';
+import sevenImage from '../../assets/brands/spandek/louver/seven/one.png';
+import FourImage from '../../assets/brands/spandek/louver/four/one.png';
+import ThreeImage from '../../assets/brands/spandek/louver/three/one.png';
+import zinc360Image from '../../assets/brands/spandek/zinc/360/one.png';
+import zinc450Image from '../../assets/brands/spandek/zinc/450/one.png';
+import spandekBlueImage from '../../assets/brands/spandek/spandek/blue.png';
+import spandekWhiteImage from '../../assets/brands/spandek/spandek/white.png';
+import spandekCharcoalImage from '../../assets/brands/spandek/spandek/charcoal.png';
+import spandekGreyImage from '../../assets/brands/spandek/spandek/grey.png';
+import spandekSilverImage from '../../assets/brands/spandek/spandek/silver.png';
+
+import spandekBasaltImage from '../../assets/brands/spandek/color/basalt.jpg';
+import spandekBlueColorImage from '../../assets/brands/spandek/color/blue.jpg';
+import spandekBrownGoldImage from '../../assets/brands/spandek/color/brown-gold.jpg';
+import spandekChampagneGoldImage from '../../assets/brands/spandek/color/champagne-gold.jpg';
+import spandekCortenBrownImage from '../../assets/brands/spandek/color/corten-brown.jpg';
+import spandekDarkWoodImage from '../../assets/brands/spandek/color/dark-wood.jpg';
+import spandekGrayWoodImage from '../../assets/brands/spandek/color/gray-gold.jpg';
+import spandekLightWoodImage from '../../assets/brands/spandek/color/light-wood.jpg';
+import spandekMarbleImage from '../../assets/brands/spandek/color/marble.jpg';
+import spandekMultiBlueImage from '../../assets/brands/spandek/color/multi-blue.jpg';
+import spandekNaturalWoodImage from '../../assets/brands/spandek/color/natural-wood.jpg';
+import spandekOrangeImage from '../../assets/brands/spandek/color/orange.jpg';
+import spandekRedGoldImage from '../../assets/brands/spandek/color/red-gold.jpg';
+import spandekRedImage from '../../assets/brands/spandek/color/red.jpg';
+import spandekSilverGrayImage from '../../assets/brands/spandek/color/silver-gray.jpg';
+import spandekSkyGoldImage from '../../assets/brands/spandek/color/sky-gold.jpg';
+import spandekTitaniumSilverImage from '../../assets/brands/spandek/color/titanium-silver.jpg';
+import spandekWhiteLemonImage from '../../assets/brands/spandek/color/white-lemon.jpg';
+import spandekWhiteColorImage from '../../assets/brands/spandek/color/white.jpg';
+import spandekWrinkleBrownImage from '../../assets/brands/spandek/color/wrinkle-brown.jpg';
+import spandekZincBlackImage from '../../assets/brands/spandek/color/zinc-black.jpg';
+import spandekZincCooperImage from '../../assets/brands/spandek/color/zinc-cooper.jpg';
+import spandekZincGrayImage from '../../assets/brands/spandek/color/zinc-gray.jpg';
 
 const Spandek = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -27,7 +54,13 @@ const Spandek = () => {
 
     {
       title: "Spandek",
-      image: spandekImage,
+      image: [
+        spandekBlueImage,
+        spandekWhiteImage,
+        spandekCharcoalImage,
+        spandekGreyImage,
+        spandekSilverImage
+      ],
       category: "Spandek Steel Panel",
       details: [
         { label: "Thickness", value: "0.4 mm & 0.5 ⅟ mm" },
@@ -55,7 +88,32 @@ const Spandek = () => {
 
     {
       title: "Louver Steel Panel 7 Ribs",
-      image: sevenImage,
+      image: [
+        sevenImage,
+        spandekBasaltImage,
+        spandekBlueColorImage,
+        spandekBrownGoldImage,
+        spandekChampagneGoldImage,
+        spandekCortenBrownImage,
+        spandekDarkWoodImage,
+        spandekGrayWoodImage,
+        spandekLightWoodImage,
+        spandekMarbleImage,
+        spandekMultiBlueImage,
+        spandekNaturalWoodImage,
+        spandekOrangeImage,
+        spandekRedGoldImage,
+        spandekRedImage,
+        spandekSilverGrayImage,
+        spandekSkyGoldImage,
+        spandekTitaniumSilverImage,
+        spandekWhiteLemonImage,
+        spandekWhiteColorImage,
+        spandekWrinkleBrownImage,
+        spandekZincBlackImage,
+        spandekZincCooperImage,
+        spandekZincGrayImage
+      ],
       category: "Louver Steel Panel",
       details: [
         { label: "Thickness", value: "0.5 ⅟ mm" },
@@ -83,7 +141,32 @@ const Spandek = () => {
     },
     {
       title: "Louver Steel Panel 4 Ribs",
-      image: FourImage,
+      image: [
+        FourImage, 
+        spandekBasaltImage,
+        spandekBlueColorImage,
+        spandekBrownGoldImage,
+        spandekChampagneGoldImage,
+        spandekCortenBrownImage,
+        spandekDarkWoodImage,
+        spandekGrayWoodImage,
+        spandekLightWoodImage,
+        spandekMarbleImage,
+        spandekMultiBlueImage,
+        spandekNaturalWoodImage,
+        spandekOrangeImage,
+        spandekRedGoldImage,
+        spandekRedImage,
+        spandekSilverGrayImage,
+        spandekSkyGoldImage,
+        spandekTitaniumSilverImage,
+        spandekWhiteLemonImage,
+        spandekWhiteColorImage,
+        spandekWrinkleBrownImage,
+        spandekZincBlackImage,
+        spandekZincCooperImage,
+        spandekZincGrayImage
+      ],
       category: "Louver Steel Panel",
       details: [
         { label: "Thickness", value: "0.5 ⅟ mm" },
@@ -111,7 +194,32 @@ const Spandek = () => {
     },
     {
       title: "Louver Steel Panel 3 Ribs",
-      image: ThreeImage,
+      image: [
+        ThreeImage, 
+        spandekBasaltImage,
+        spandekBlueColorImage,
+        spandekBrownGoldImage,
+        spandekChampagneGoldImage,
+        spandekCortenBrownImage,
+        spandekDarkWoodImage,
+        spandekGrayWoodImage,
+        spandekLightWoodImage,
+        spandekMarbleImage,
+        spandekMultiBlueImage,
+        spandekNaturalWoodImage,
+        spandekOrangeImage,
+        spandekRedGoldImage,
+        spandekRedImage,
+        spandekSilverGrayImage,
+        spandekSkyGoldImage,
+        spandekTitaniumSilverImage,
+        spandekWhiteLemonImage,
+        spandekWhiteColorImage,
+        spandekWrinkleBrownImage,
+        spandekZincBlackImage,
+        spandekZincCooperImage,
+        spandekZincGrayImage
+      ],
       category: "Louver Steel Panel",
       details: [
         { label: "Thickness", value: "0.5 ⅟ mm" },
@@ -140,7 +248,32 @@ const Spandek = () => {
 
     {
       title: "Zinc Steel Plate 360 Width",
-      image: zinc360Image,
+      image: [
+        zinc360Image, 
+        spandekBasaltImage,
+        spandekBlueColorImage,
+        spandekBrownGoldImage,
+        spandekChampagneGoldImage,
+        spandekCortenBrownImage,
+        spandekDarkWoodImage,
+        spandekGrayWoodImage,
+        spandekLightWoodImage,
+        spandekMarbleImage,
+        spandekMultiBlueImage,
+        spandekNaturalWoodImage,
+        spandekOrangeImage,
+        spandekRedGoldImage,
+        spandekRedImage,
+        spandekSilverGrayImage,
+        spandekSkyGoldImage,
+        spandekTitaniumSilverImage,
+        spandekWhiteLemonImage,
+        spandekWhiteColorImage,
+        spandekWrinkleBrownImage,
+        spandekZincBlackImage,
+        spandekZincCooperImage,
+        spandekZincGrayImage
+      ],
       category: "Zinc Steel Panel",
       details: [
         { label: "Thickness", value: "0.5 ⅟ mm" },
@@ -168,7 +301,32 @@ const Spandek = () => {
     },
     {
       title: "Zinc Steel Panel 450 Width",
-      image: zinc450Image,
+      image: [
+        zinc450Image, 
+        spandekBasaltImage,
+        spandekBlueColorImage,
+        spandekBrownGoldImage,
+        spandekChampagneGoldImage,
+        spandekCortenBrownImage,
+        spandekDarkWoodImage,
+        spandekGrayWoodImage,
+        spandekLightWoodImage,
+        spandekMarbleImage,
+        spandekMultiBlueImage,
+        spandekNaturalWoodImage,
+        spandekOrangeImage,
+        spandekRedGoldImage,
+        spandekRedImage,
+        spandekSilverGrayImage,
+        spandekSkyGoldImage,
+        spandekTitaniumSilverImage,
+        spandekWhiteLemonImage,
+        spandekWhiteColorImage,
+        spandekWrinkleBrownImage,
+        spandekZincBlackImage,
+        spandekZincCooperImage,
+        spandekZincGrayImage
+      ],
       category: "Zinc Steel Panel",
       details: [
         { label: "Thickness", value: "0.5 ⅟ mm" },
@@ -268,7 +426,7 @@ const Spandek = () => {
                 {/* Project image using LazyImage */}
                 <div className="relative aspect-[16/9] overflow-hidden rounded-t-2xl">
                   <LazyImage
-                    src={project.image}
+                    src={project.image[0] || project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                   />
