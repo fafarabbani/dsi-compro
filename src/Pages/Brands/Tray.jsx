@@ -14,10 +14,9 @@ import cableTray9Image from '../../assets/brands/tray/cabletray/cts9.jpg';
 import cableTray10Image from '../../assets/brands/tray/cabletray/cts10.jpg';
 import cableTray11Image from '../../assets/brands/tray/cabletray/cts11.jpg';
 import cableTray12Image from '../../assets/brands/tray/cabletray/cts12.jpg';
-import posmacTrayImage from '../../assets/brands/tray/posmactray/pt_pro7_re_01.jpg';
-import posmacTray1Image from '../../assets/brands/tray/posmactray/pro7_re_01.jpg';
-import posmacTray2Image from '../../assets/brands/tray/posmactray/pro7_re_02.jpg';
-import posmacTray3Image from '../../assets/brands/tray/posmactray/pro7_re_03.jpg';
+import posmacTray1Image from '../../assets/brands/tray/posmactray/pt_pro7_re_01.jpg';
+import posmacTray2Image from '../../assets/brands/tray/posmactray/pt_pro7_re_02.jpg';
+import posmacTray3Image from '../../assets/brands/tray/posmactray/pt_pro7_re_03.jpg';
 import aluminiumTray1Image from '../../assets/brands/tray/aluminiumtray/pro5_01.jpg';
 import aluminiumTray2Image from '../../assets/brands/tray/aluminiumtray/pro5_02.jpg';
 import aluminiumTray3Image from '../../assets/brands/tray/aluminiumtray/pro5_03.jpg';
@@ -95,10 +94,9 @@ const Tray = () => {
     {
       title: "Posmac Tray Type",
       images: [
-          posmacTrayImage,
-          // posmacTray1Image,
-          // posmacTray2Image,
-          // posmacTray3Image,
+          posmacTray1Image,
+          posmacTray2Image,
+          posmacTray3Image,
         ],
       category: "Posmac Tray",
       info: "H100 x L3000 x 2.0T",
