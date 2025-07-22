@@ -48,11 +48,6 @@ const DetailSpandek = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(goToNext, 3000); // Auto-slide setiap 3 detik
-  //   return () => clearInterval(interval); // Membersihkan interval ketika komponen dibongkar
-  // }, []);
-
   // Fungsi untuk berpindah ke slide sebelumnya
   const goToPrevious = () => {
     setCurrentIndex(

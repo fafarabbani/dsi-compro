@@ -65,7 +65,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/brands/spandek" element={<BrandSpandek />} />
+          <Route path="/brands/:category" element={<BrandSpandek />} />
           <Route path="/brands/tray" element={<BrandTray />} />
           <Route path="/brands/spandek/detail" element={<DetailSpandekPage />} />
         </Routes>

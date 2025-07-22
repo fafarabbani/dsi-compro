@@ -28,58 +28,48 @@ const Navbar = () => {
       href: "/"
     },
     {
-      title: "About Us",
-      href: "/about"
-    },
-    {
       title: "Our Brands",
       subMenu: [
         {
-          title: "Spandek",
+          title: "Spandek Steel",
           desc: "ISO : ",
           // href: "",
-          href: "/brands/spandek"
+          href: "/brands/spandek-steel"
         },
         {
-          title: "Tray",
+          title: "Louver Steel Panel",
+          desc: "ISO : ",
+          // href: "",
+          href: "/brands/louver-steel-panel"
+        },
+        {
+          title: "Zinc Steel Panel",
+          desc: "ISO : ",
+          // href: "",
+          href: "/brands/zinc-steel-panel"
+        },
+        {
+          title: "Cable Tray",
           desc: "ISO : ",
           // href: "",
           href: "/brands/tray"
         },
         {
-          title: "Epoxy",
+          title: "Epoxy & Resins Epoxy",
           desc: "ISO : ",
           href: ""
         },
       ],
       gridCols: 2
     },
-    // {
-    //   title: "Our Products",
-    //   href: "/products",
-    //   subMenu: [
-    //     {
-    //       title: "Louver Steel Panel",
-    //       desc: "Spandek",
-    //       href: "/brands/a"
-    //     },
-    //     {
-    //       title: "Zinc Steel Panel",
-    //       desc: "Spandek",
-    //       href: "/brands/b"
-    //     },
-    //     {
-    //       title: "Spandek Steel Panel",
-    //       desc: "Spandek",
-    //       href: "/brands/b"
-    //     },
-    //   ],
-    //   gridCols: 2
-    // },
     {
-      title: "Community",
-      href: "#"
+      title: "About Us",
+      href: "/about"
     },
+    // {
+    //   title: "Community",
+    //   href: "#"
+    // },
     {
       title: "Contact Us",
       href: "/contact"

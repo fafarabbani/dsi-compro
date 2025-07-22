@@ -9,6 +9,7 @@ import {
   CheckCircle2,
   XCircle,
 } from "lucide-react";
+import EmailRestAPI from "../../components/Email/EmailRestAPI";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -53,9 +54,30 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
+    const serviceId = "service_q1lep9i";
+    const templateId = "template_rv1z4ai";
+    const publicKey = "iFlX6Pbq0yUyek3Mr";
+
+    const data = {
+      serviceId,
+      templateId,
+      publicKey,
+      templateParams: {
+        from_name: formData.fullName,
+        from_email: formData.email,
+        from_phone: formData.phone,
+        to_name: "Website DSI",
+        message: formData.message,
+      },
+    };
+
     // Simulate API call
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      // await new Promise((resolve) => setTimeout(resolve, 1500));
+      await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        data
+      );
       setSubmitStatus("success");
       setFormData({
         fullName: "",
@@ -123,7 +145,9 @@ const Contact = () => {
 
             <StatusMessage status={submitStatus} />
 
-            <form
+            <EmailRestAPI />
+
+            {/* <form
               onSubmit={handleSubmit}
               className="space-y-4"
               aria-labelledby="contact-form-title"
@@ -222,7 +246,7 @@ const Contact = () => {
                   </>
                 )}
               </button>
-            </form>
+            </form> */}
           </div>
 
           {/* Contact information */}
