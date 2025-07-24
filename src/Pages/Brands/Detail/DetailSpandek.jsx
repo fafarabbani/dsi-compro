@@ -35,7 +35,7 @@ const DetailSpandek = () => {
       images = [
         oneZincImage,
       ];
-    } else if (project.category === "Spandek Steel Panel") {
+    } else if (project.category === "Spandek Steel") {
       images = [
         oneSpandekImage,
       ];
