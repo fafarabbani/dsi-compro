@@ -2,53 +2,28 @@ import React, { useState } from "react";
 import { ExternalLink, ArrowUpRight, Code } from "lucide-react";
 import { useNavigate } from "react-router-dom"; 
 
-import cableTray1Image from '../../assets/brands/tray/cabletray/cts1.jpg';
-import cableTray2Image from '../../assets/brands/tray/cabletray/cts2.jpg';
-import cableTray3Image from '../../assets/brands/tray/cabletray/cts3.jpg';
-import cableTray4Image from '../../assets/brands/tray/cabletray/cts4.jpg';
-import cableTray5Image from '../../assets/brands/tray/cabletray/cts5.jpg';
-import cableTray6Image from '../../assets/brands/tray/cabletray/cts6.jpg';
-import cableTray7Image from '../../assets/brands/tray/cabletray/cts7.jpg';
-import cableTray8Image from '../../assets/brands/tray/cabletray/cts8.jpg';
-import cableTray9Image from '../../assets/brands/tray/cabletray/cts9.jpg';
-import cableTray10Image from '../../assets/brands/tray/cabletray/cts10.jpg';
-import cableTray11Image from '../../assets/brands/tray/cabletray/cts11.jpg';
-import cableTray12Image from '../../assets/brands/tray/cabletray/cts12.jpg';
+import cableTray1Image from '../../assets/brands/tray/cabletray/ct_pro1_01.jpg';
+import cableTray2Image from '../../assets/brands/tray/cabletray/ct_pro1_02.jpg';
+import cableTray3Image from '../../assets/brands/tray/cabletray/ct_pro1_03.jpg';
 import posmacTray1Image from '../../assets/brands/tray/posmactray/pt_pro7_re_01.jpg';
 import posmacTray2Image from '../../assets/brands/tray/posmactray/pt_pro7_re_02.jpg';
 import posmacTray3Image from '../../assets/brands/tray/posmactray/pt_pro7_re_03.jpg';
-import aluminiumTray1Image from '../../assets/brands/tray/aluminiumtray/pro5_01.jpg';
-import aluminiumTray2Image from '../../assets/brands/tray/aluminiumtray/pro5_02.jpg';
-import aluminiumTray3Image from '../../assets/brands/tray/aluminiumtray/pro5_03.jpg';
-import aluminiumTray4Image from '../../assets/brands/tray/aluminiumtray/pro5_04.jpg';
-import aluminiumTray5Image from '../../assets/brands/tray/aluminiumtray/pro5_05.jpg';
-import cableDuct1Image from '../../assets/brands/tray/cableduct/pro2_01.jpg';
-import cableDuct2Image from '../../assets/brands/tray/cableduct/pro2_02.jpg';
-import cableDuct3Image from '../../assets/brands/tray/cableduct/pro2_03.jpg';
-import cableDuct4Image from '../../assets/brands/tray/cableduct/pro2_04.jpg';
-import cableDuct5Image from '../../assets/brands/tray/cableduct/pro2_05.jpg';
-import cableDuct6Image from '../../assets/brands/tray/cableduct/pro2_06.jpg';
-import cableDuct7Image from '../../assets/brands/tray/cableduct/pro2_07.jpg';
-import punchedTrayImage from '../../assets/brands/tray/punchedtray/pro3.jpg';
-import meshTray1Image from '../../assets/brands/tray/meshtray/pro8_01.jpg';
-import meshTray2Image from '../../assets/brands/tray/meshtray/pro8_02.jpg';
-import raceWay1Image from '../../assets/brands/tray/raceway/pro4_01.jpg';
-import raceWay2Image from '../../assets/brands/tray/raceway/pro4_02.jpg';
-import raceWay3Image from '../../assets/brands/tray/raceway/pro4_03.jpg';
-import raceWay4Image from '../../assets/brands/tray/raceway/pro4_04.jpg';
-import raceWay5Image from '../../assets/brands/tray/raceway/pro4_05.jpg';
-import hitecTray1Image from '../../assets/brands/tray/hitectray/pro9_01.jpg';
-import hitecTray2Image from '../../assets/brands/tray/hitectray/pro9_02.jpg';
-import hitecTray3Image from '../../assets/brands/tray/hitectray/pro9_03.jpg';
-import hitecTray4Image from '../../assets/brands/tray/hitectray/pro9_04.jpg';
-import hitecTray5Image from '../../assets/brands/tray/hitectray/pro9_05.jpg';
-import hitecTray6Image from '../../assets/brands/tray/hitectray/pro9_06.jpg';
-import chanelSupport1Image from '../../assets/brands/tray/chanelsupport/pro6_01.jpg';
-import chanelSupport2Image from '../../assets/brands/tray/chanelsupport/pro6_02.jpg';
-import chanelSupport3Image from '../../assets/brands/tray/chanelsupport/pro6_03.jpg';
-import chanelSupport4Image from '../../assets/brands/tray/chanelsupport/pro6_04.jpg';
-import chanelSupport5Image from '../../assets/brands/tray/chanelsupport/pro6_05.jpg';
-import chanelSupport6Image from '../../assets/brands/tray/chanelsupport/pro6_06.jpg';
+import aluminiumTray1Image from '../../assets/brands/tray/aluminiumtray/at_pro5_01.jpg';
+import aluminiumTray2Image from '../../assets/brands/tray/aluminiumtray/at_pro5_02.jpg';
+import cableDuct1Image from '../../assets/brands/tray/cableduct/cd_pro2_01.jpg';
+import cableDuct2Image from '../../assets/brands/tray/cableduct/cd_pro2_02.jpg';
+import punchedTrayImage from '../../assets/brands/tray/punchedtray/pt_pro3.jpg';
+import meshTray1Image from '../../assets/brands/tray/meshtray/mt_pro8_01.jpg';
+import meshTray2Image from '../../assets/brands/tray/meshtray/mt_pro8_02.jpg';
+import raceWayImage from '../../assets/brands/tray/raceway/rw_pro4_01.jpg';
+import hitecTray1Image from '../../assets/brands/tray/hitectray/ht_pro9_01.jpg';
+import hitecTray2Image from '../../assets/brands/tray/hitectray/ht_pro9_02.jpg';
+import hitecTray3Image from '../../assets/brands/tray/hitectray/ht_pro9_03.jpg';
+import chanelSupport1Image from '../../assets/brands/tray/chanelsupport/cs_pro6_01.jpg';
+import chanelSupport2Image from '../../assets/brands/tray/chanelsupport/cs_pro6_02.jpg';
+import chanelSupport3Image from '../../assets/brands/tray/chanelsupport/cs_pro6_03.jpg';
+import chanelSupport4Image from '../../assets/brands/tray/chanelsupport/cs_pro6_04.jpg';
+import chanelSupport5Image from '../../assets/brands/tray/chanelsupport/cs_pro6_05.jpg';
 
 
 const Tray = () => {
@@ -60,7 +35,6 @@ const Tray = () => {
     // "All", 
     "Cable Tray", 
     "Posmac Tray", 
-    "Stainless Steel Tray", 
     "Aluminium Tray", 
     "Cable Duct", 
     "Punched Tray", 
@@ -78,15 +52,6 @@ const Tray = () => {
           cableTray1Image,
           cableTray2Image,
           cableTray3Image,
-          cableTray4Image,
-          cableTray5Image,
-          cableTray6Image,
-          cableTray7Image,
-          cableTray8Image,
-          cableTray9Image,
-          cableTray10Image,
-          cableTray11Image,
-          cableTray12Image,
         ],
       category: "Cable Tray",
       info: "H100 x L3000 x 20F",
@@ -106,9 +71,6 @@ const Tray = () => {
       images: [
           aluminiumTray1Image,
           aluminiumTray2Image,
-          aluminiumTray3Image,
-          aluminiumTray4Image,
-          aluminiumTray5Image,
         ],
       category: "Aluminium Tray",
       info: "H100 x L3000 x 2.0T",
@@ -118,11 +80,6 @@ const Tray = () => {
       images: [
           cableDuct1Image,
           cableDuct2Image,
-          cableDuct3Image,
-          cableDuct4Image,
-          cableDuct5Image,
-          cableDuct6Image,
-          cableDuct7Image,
         ],
       category: "Cable Duct",
       info: "H100 x L3000 x 2.0T",
@@ -147,11 +104,7 @@ const Tray = () => {
     {
       title: "Race Way Type",
       images: [
-          raceWay1Image,
-          raceWay2Image,
-          raceWay3Image,
-          raceWay4Image,
-          raceWay5Image,
+          raceWayImage,
         ],
       category: "Race Way",
       info: "H100 x L3000 x 2.0T",
@@ -162,9 +115,6 @@ const Tray = () => {
           hitecTray1Image,
           hitecTray2Image,
           hitecTray3Image,
-          hitecTray4Image,
-          hitecTray5Image,
-          hitecTray6Image,
         ],
       category: "Hi-Tec Tray",
       info: "H100 x L3000 x 2.0T",
@@ -177,7 +127,6 @@ const Tray = () => {
           chanelSupport3Image,
           chanelSupport4Image,
           chanelSupport5Image,
-          chanelSupport6Image,
         ],
       category: "Chanel Support",
       info: "H100 x L3000 x 2.0T",
