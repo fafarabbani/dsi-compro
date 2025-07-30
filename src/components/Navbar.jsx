@@ -55,9 +55,14 @@ const Navbar = () => {
           href: "/brands/tray"
         },
         {
-          title: "Epoxy & Resins Epoxy",
+          title: "Epoxy",
           desc: "ISO : ",
-          href: ""
+          href: "/brands/epoxy"
+        },
+        {
+          title: "Resins",
+          desc: "ISO : ",
+          href: "/brands/epoxy"
         },
       ],
       gridCols: 2

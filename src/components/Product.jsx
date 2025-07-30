@@ -53,7 +53,7 @@ const Product = () => {
       description:
         "High-quality epoxy-based floor and interior coatings that provide maximum protection against abrasion, chemicals, and moisture. Suitable for industrial, commercial, and residential areas.",
       image: interiorImage,
-      features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
+      features: ["Durability and Resistance", "Mechanical Strength", "Abrasion Resistance"],
       link: "/products", 
     },
     {
@@ -61,7 +61,7 @@ const Product = () => {
       description:
         "A high-performance resin with a Korean formula that provides strong adhesion and a precise finish. Available for a variety of industrial and interior applications.",
       image: resinImage,
-      features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
+      features: ["Flexibility and Versatility", "Ease of Molding and Shaping", "High Transparency"],
       link: "/products", 
     },
   ];

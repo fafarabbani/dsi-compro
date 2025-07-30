@@ -102,14 +102,6 @@ const Tray = () => {
       info: "H100 x L3000 x 2.0T",
     },
     {
-      title: "Race Way Type",
-      images: [
-          raceWayImage,
-        ],
-      category: "Race Way",
-      info: "H100 x L3000 x 2.0T",
-    },
-    {
       title: "Hi-Tec Tray Type",
       images: [
           hitecTray1Image,
@@ -117,6 +109,14 @@ const Tray = () => {
           hitecTray3Image,
         ],
       category: "Hi-Tec Tray",
+      info: "H100 x L3000 x 2.0T",
+    },
+    {
+      title: "Race Way Type",
+      images: [
+          raceWayImage,
+        ],
+      category: "Race Way",
       info: "H100 x L3000 x 2.0T",
     },
     {
