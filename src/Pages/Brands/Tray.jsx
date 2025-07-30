@@ -39,8 +39,8 @@ const Tray = () => {
     "Cable Duct", 
     "Punched Tray", 
     "Mesh Tray", 
-    "Race Way", 
     "Hi-Tec Tray", 
+    "Race Way", 
     "Chanel Support", 
   ];
 
