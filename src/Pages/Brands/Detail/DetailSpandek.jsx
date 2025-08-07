@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { ExternalLink, ArrowUpRight, Code } from "lucide-react";
+import { ExternalLink, ArrowUpRight, Code, ArrowLeft } from "lucide-react";
 
 import oneLouverImage from '../../../assets/brands/spandek/louver/seven/1.jpeg';
 import twoLouverImage from '../../../assets/brands/spandek/louver/seven/2.jpg';
@@ -157,9 +157,18 @@ const DetailSpandek = () => {
                   </div>
                 ))}
             </div>
-                <div>
-                  <img className="rounded-lg" src={project?.image[currentImage]} width={480} height={480} alt={project?.color[currentImage]} />
+            <div>
+              <img className="rounded-lg" src={project?.image[currentImage]} width={480} height={480} alt={project?.color[currentImage]} />
+              <div className="text-start max-w-6xl mx-auto">
+                <div
+                  className="inline-flex items-center gap-2 px-4 py-2 text-slate-900 duration-300 cursor-pointer group mb-8 hover:underline"
+                  onClick={() => window.history.back()}
+                >
+                  <ArrowLeft className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <span className="text-sm font-medium">Back</span>
+                </div>
               </div>
+            </div>
           </div>
     
           {/* DSI 2 - Teks */}
@@ -229,6 +238,7 @@ const DetailSpandek = () => {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );

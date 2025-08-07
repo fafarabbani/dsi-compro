@@ -126,13 +126,14 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-slate-400 text-sm gap-1">
               <span>© {currentYear} </span>
-              <a
+              {/* <a
                 href="/"
                 className="text-sm text-blue-900  transition-colors hover:underline font-semibold"
               >
                 PT. DSI Metal Technology
-              </a>
-              <span>. All rights reserved.</span>
+              </a> */}
+              <span>Copyrights DSI Metal Technology</span>
+              <span> - All rights reserved.</span>
             </p>
             <div className="flex space-x-6">
               <a

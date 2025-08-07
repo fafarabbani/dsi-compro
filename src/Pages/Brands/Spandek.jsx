@@ -140,37 +140,37 @@ const Spandek = () => {
         
       ]
     },
-    {
-      title: "Louver Steel Panel 3 Ribs",
-      image: [
-        ThreeImage, 
-        spandekColorImage
-      ],
-      category: "Louver Steel Panel",
-      details: [
-        { label: "Thickness", value: "0.5 ⅟ mm" },
-        { label: "Coil Width", value: "610 mm" },
-        { label: "Product Thx", value: "17.5 T" },
-      ],
-      limits: [
-        { label: "Width", value: "345 mm" },
-        { label: "Length", value: "900 mm" },
-        { label: "Corner", value: "Var" },
-        { label: "Garansi", value: "36 Years" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "275.000", unit: " per m²"  },
-        { label: "Agent Price", value: "305.000", unit: " per m²"  },
-        { label: "Market Price", value: "410.000", unit: " per m²"  },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order", value: "2 weeks" },
-      ],
-      color: [
+    // {
+    //   title: "Louver Steel Panel 3 Ribs",
+    //   image: [
+    //     ThreeImage, 
+    //     spandekColorImage
+    //   ],
+    //   category: "Louver Steel Panel",
+    //   details: [
+    //     { label: "Thickness", value: "0.5 ⅟ mm" },
+    //     { label: "Coil Width", value: "610 mm" },
+    //     { label: "Product Thx", value: "17.5 T" },
+    //   ],
+    //   limits: [
+    //     { label: "Width", value: "345 mm" },
+    //     { label: "Length", value: "900 mm" },
+    //     { label: "Corner", value: "Var" },
+    //     { label: "Garansi", value: "36 Years" },
+    //   ],
+    //   prices: [
+    //     { label: "B2B Price", value: "275.000", unit: " per m²"  },
+    //     { label: "Agent Price", value: "305.000", unit: " per m²"  },
+    //     { label: "Market Price", value: "410.000", unit: " per m²"  },
+    //   ],
+    //   informations: [
+    //     { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
+    //     { label: "Customer Order", value: "2 weeks" },
+    //   ],
+    //   color: [
         
-      ]
-    },
+    //   ]
+    // },
 
     {
       title: "Zinc Steel",

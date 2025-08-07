@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { ExternalLink, ArrowUpRight, Code } from "lucide-react";
+import { ExternalLink, ArrowUpRight, Code, ArrowLeft } from "lucide-react";
 
 import oneLouverImage from '../../../assets/brands/spandek/louver/seven/1.jpeg';
 import twoLouverImage from '../../../assets/brands/spandek/louver/seven/2.jpg';
@@ -86,7 +86,7 @@ const DetailEpoxy = () => {
                 className="absolute w-full h-screen -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt={`carousel-item-${index}`}
               />
-            </div>
+            </div> 
           ))}
         </div>
 
@@ -135,7 +135,7 @@ const DetailEpoxy = () => {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group mb-8">
-            <span className="text-sm font-medium">Details Product</span>
+            <span className="text-sm font-medium">Detail Product</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
         </div>
@@ -152,14 +152,23 @@ const DetailEpoxy = () => {
                       width={100}
                       height={100}
                       onMouseOver={() => setCurrentImage(index)}
-                      alt={project?.color?.[index] || `Image ${index + 1}`}
                     />
                   </div>
                 ))}
+                
             </div>
-                <div>
-                  <img className="rounded-lg" src={project?.image[currentImage]} width={480} height={480} alt={project?.color[currentImage]} />
-              </div>
+            <div>
+                <img className="rounded-lg" src={project?.image[currentImage]} width={480} height={480} alt={project?.color[currentImage]} />
+                <div className="text-start max-w-6xl mt-5 mx-auto">
+                  <div
+                    className="inline-flex items-center gap-2 px-4 py-2 text-slate-900 duration-300 cursor-pointer group mb-8 hover:underline"
+                    onClick={() => window.history.back()}
+                  >
+                    <ArrowLeft className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    <span className="text-sm font-medium">Back</span>
+                  </div>
+                </div>
+            </div>
           </div>
     
           {/* DSI 2 - Teks */}
@@ -167,67 +176,25 @@ const DetailEpoxy = () => {
             <h1 className="font-black lg:text-5xl bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent">
               {project?.title}
             </h1>
-            <div className="mt-4 text-justify">
+            <span className="text-md opacity-75 my-4">
+              {project?.description}
+            </span>
+            <div className="mt-3 text-justify">
               {/* Details */}
-              <div className="flex flex-wrap gap-3 mb-6">
+              <div className="flex flex-col gap-1">
                 {project?.details.map((detail, idx) => (
-                      <div key={idx} className="text-gray-600">
+                      <div key={idx} className="text-gray-600 gap-5">
                         <div className="text-sm opacity-75">
                           {detail.label}
                         </div>
-                        <div className="text-md font-bold">
+                        <div className="text-sm font-bold">
                           {detail.value}
                         </div>
                       </div>
                     ))}
               </div>
-
-              {/* Product Limits */}
-              <div className="flex flex-wrap gap-3 mb-6">
-                {project?.limits.map((limit, idx) => (
-                      <div key={idx} className="text-gray-600">
-                        <div className="text-sm opacity-75">
-                          {limit.label}
-                        </div>
-                        <div className="text-md font-bold">
-                          {limit.value}
-                        </div>
-                      </div>
-                    ))}
-              </div>
-
-              {/* Prices */}
-              <div className="flex flex-wrap gap-3 mb-6">
-                {project?.prices.map((price, idx) => (
-                      <div key={idx} className="text-gray-600">
-                        <div className="text-sm opacity-75">
-                          {price.label}
-                          <span className="text-red-700">{price.unit}</span>
-                        </div>
-                        <div className="text-md font-bold">
-                          <span>Rp. </span>
-                          {price.value}
-                          <span>,00</span>
-                        </div>
-                      </div>
-                    ))}
-              </div>
-
-              {/* Informations */}
-              <div className="flex flex-wrap gap-3 mb-6">
-                {project?.informations.map((information, idx) => (
-                  <div key={idx} className="text-gray-600">
-                    <div className="text-sm opacity-75">
-                      {information.label}
-                    </div>
-                    <div className="text-md font-bold">
-                      {information.value}
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
     </section>

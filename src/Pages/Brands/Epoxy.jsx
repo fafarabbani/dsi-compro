@@ -3,9 +3,9 @@ import { ExternalLink, ArrowUpRight, Code } from "lucide-react";
 import { useNavigate, useLocation  } from "react-router-dom"; 
 import LazyImage from "../../components/LazyImage"; 
 
-import polyuthane01Image from '../../assets/brands/epoxy/polyuthane/poly_01.jpg';
-import polyuthane02Image from '../../assets/brands/epoxy/polyuthane/poly_02.jpg';
-import polyuthane03Image from '../../assets/brands/epoxy/polyuthane/poly_03.jpg';
+import polyuthane01Image from '../../assets/brands/epoxy/polyuthane/outdoor front.jpg';
+import polyuthane02Image from '../../assets/brands/epoxy/polyuthane/outdoor back.jpg';
+import polyuthane03Image from '../../assets/brands/epoxy/polyuthane/outdoor.jpg';
 
 const Epoxy = () => {
 
@@ -26,142 +26,38 @@ const Epoxy = () => {
   const categories = 
   [
     "All", 
-    "Polyurethane",
-    "Construction & Civil Engineering FLOOR",
+    "Epoxy Flooring Paint",
+    "Polyurethane Concrete Floor Paint",
     "Adhesive",
-    "Crack Repair & Reinforcement",
+    "Field Paint",
     "Electronics",
   ];
 
   const projects = [
 
     {
-      title: "",
+      title: "Epoxy Outdoor",
       image: [
         polyuthane01Image,
         polyuthane02Image,
         polyuthane03Image,
       ],
-      category: "Polyurethane",
+      category: "Epoxy Flooring Paint",
+      description: "Epoxy Flooring Paint",
       details: [
-        { label: "Thickness", value: "0.4 mm & 0.5 ⅟ mm" },
-        { label: "Coil Width", value: "530 mm" },
-        { label: "Product Thx", value: "38 T" },
-      ],
-      limits: [
-        { label: "Width", value: "396.5 mm" },
-        { label: "Length", value: "min 900 mm" },
-        { label: "Corner", value: "Lock" },
-        { label: "Garansi", value: "25 Years" },
-      ],
-      prices: [
-        { label: "Size 0,4 mm x 1 m", value: "175.000"},
-        { label: "Size 0,51 mm x 1 m", value: "195.000"},
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order", value: "2-3 weeks" },
+        { label: "Type", value: "Waterbased Acrylic" },
+        { label: "Final Result", value: "Doff" },
+        { label: "Theoretical Spread Power", value: "1.5 – 2.0 m²/kg (200 microns/3 coats including quartz sand)" },
+        { label: "Dry Time", value: "Touch dry 10 minutes (30°C), Ready to use 48 hours" },
+        { label: "Packaging", value: "5 kg, 22.5 kg (+ 10% quartz sand)" },
+        { label: "Shelf Life", value: "1 year in sealed packaging" },
+        { label: "Thinner", value: "Clean water" },
+        { label: "Application Method", value: "Brush and roller" },
+        { label: "Cleaning", value: "After use, clean all equipment with clean water." },
+        { label: "Superiority", value: "Increases strength between topcoat and concrete" },
       ],
       color: [
         "White", "Blue", "Grey", "Charcoal", "Silver"
-      ]
-    },
-
-    {
-      title: "",
-      image: [
-        polyuthane01Image,
-        polyuthane02Image,
-        polyuthane03Image
-      ],
-      category: "Polyurethane",
-      details: [
-        { label: "Thickness", value: "0.4 mm & 0.5 ⅟ mm" },
-        { label: "Coil Width", value: "530 mm" },
-        { label: "Product Thx", value: "38 T" },
-      ],
-      limits: [
-        { label: "Width", value: "396.5 mm" },
-        { label: "Length", value: "min 900 mm" },
-        { label: "Corner", value: "Lock" },
-        { label: "Garansi", value: "25 Years" },
-      ],
-      prices: [
-        { label: "Size 0,4 mm x 1 m", value: "175.000"},
-        { label: "Size 0,51 mm x 1 m", value: "195.000"},
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order", value: "2-3 weeks" },
-      ],
-      color: [
-        "White", "Blue", "Grey", "Charcoal", "Silver"
-      ]
-    },
-
-    {
-      title: "",
-      image: [
-        polyuthane01Image,
-        polyuthane02Image,
-        polyuthane03Image
-      ],
-      category: "Construction & Civil Engineering FLOOR",
-      details: [
-        { label: "Thickness", value: "0.5 ⅟ mm" },
-        { label: "Coil Width", value: "610 mm" },
-        { label: "Product Thx", value: "17.5 T" },
-      ],
-      limits: [
-        { label: "Width", value: "345 mm" },
-        { label: "Length", value: "900 mm" },
-        { label: "Corner", value: "Var" },
-        { label: "Garansi", value: "36 Years" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "275.000", unit: " per m²"  },
-        { label: "Agent Price", value: "305.000", unit: " per m²"  },
-        { label: "Market Price", value: "410.000", unit: " per m²"  },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order", value: "2 weeks" },
-      ],
-      color: [
-        
-      ]
-    },
-
-    {
-      title: "",
-      image: [
-        polyuthane01Image,
-        polyuthane02Image,
-        polyuthane03Image
-      ],
-      category: "Adhesive",
-      details: [
-        { label: "Thickness", value: "0.5 ⅟ mm" },
-        { label: "Coil Width", value: "610 mm" },
-        { label: "Product Thx", value: "17.5 T" },
-      ],
-      limits: [
-        { label: "Width", value: "345 mm" },
-        { label: "Length", value: "900 mm" },
-        { label: "Corner", value: "Var" },
-        { label: "Garansi", value: "36 Years" },
-      ],
-      prices: [
-        { label: "B2B Price", value: "275.000", unit: " per m²"  },
-        { label: "Agent Price", value: "305.000", unit: " per m²"  },
-        { label: "Market Price", value: "410.000", unit: " per m²"  },
-      ],
-      informations: [
-        { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
-        { label: "Customer Order", value: "2 weeks" },
-      ],
-      color: [
-        
       ]
     },
 
@@ -260,7 +156,9 @@ const Epoxy = () => {
                     {project.title}
                   </button>
 
-                  <div className="inline-flex text-sm font-bold text-black pb-10 cursor-pointer"></div>
+                  <div className="inline-flex text-sm font-bold opacity-75 text-black pb-7 cursor-pointer">
+                    {project.description}
+                  </div>
 
                   <button
                     className="inline-flex items-center gap-2 text-blue-900 hover:text-blue-700 font-medium group"
