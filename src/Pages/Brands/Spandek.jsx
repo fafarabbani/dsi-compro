@@ -66,8 +66,8 @@ const Spandek = () => {
         { label: "Garansi", value: "25 Years" },
       ],
       prices: [
-        { label: "Size 0,4 mm x 1 m", value: "175.000"},
-        { label: "Size 0,51 mm x 1 m", value: "195.000"},
+        { label: "Size 0,4 mm x 1 m", value: "215.000"},
+        { label: "Size 0,51 mm x 1 m", value: "245.000"},
       ],
       informations: [
         { label: "Standard Sizes", value: "2.1m, 2.4m, 2.7m, 3m, 3.3m" },
