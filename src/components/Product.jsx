@@ -49,20 +49,12 @@ const Product = () => {
       link: "/brands/tray", 
     },
     {
-      title: "Epoxy & Interior Epoxy",
+      title: "Epoxy Flooring Paint & Resins",
       description:
         "High-quality epoxy-based floor and interior coatings that provide maximum protection against abrasion, chemicals, and moisture. Suitable for industrial, commercial, and residential areas.",
       image: interiorImage,
       features: ["Durability and Resistance", "Mechanical Strength", "Abrasion Resistance"],
-      link: "/products", 
-    },
-    {
-      title: "Resin Epoxy",
-      description:
-        "A high-performance resin with a Korean formula that provides strong adhesion and a precise finish. Available for a variety of industrial and interior applications.",
-      image: resinImage,
-      features: ["Flexibility and Versatility", "Ease of Molding and Shaping", "High Transparency"],
-      link: "/products", 
+      link: "/brands/epoxy", 
     },
   ];
 

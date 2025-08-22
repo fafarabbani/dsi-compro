@@ -3,9 +3,21 @@ import { ExternalLink, ArrowUpRight, Code } from "lucide-react";
 import { useNavigate, useLocation  } from "react-router-dom"; 
 import LazyImage from "../../components/LazyImage"; 
 
-import polyuthane01Image from '../../assets/brands/epoxy/polyuthane/outdoor front.jpg';
-import polyuthane02Image from '../../assets/brands/epoxy/polyuthane/outdoor back.jpg';
-import polyuthane03Image from '../../assets/brands/epoxy/polyuthane/outdoor.jpg';
+import basement01Image from '../../assets/brands/epoxy/basement/basement-front.jpg';
+import basement02Image from '../../assets/brands/epoxy/basement/basement-back.jpg';
+import basement03Image from '../../assets/brands/epoxy/basement/basement-double.jpg';
+import interior01Image from '../../assets/brands/epoxy/interior/interior-front.jpg';
+import interior02Image from '../../assets/brands/epoxy/interior/interior-back.jpg';
+import interior03Image from '../../assets/brands/epoxy/interior/interior-double.jpg';
+import outdoor01Image from '../../assets/brands/epoxy/outdoor/outdoor-front.jpg';
+import outdoor02Image from '../../assets/brands/epoxy/outdoor/outdoor-back.jpg';
+import outdoor03Image from '../../assets/brands/epoxy/outdoor/outdoor-double.jpg';
+import rooftop01Image from '../../assets/brands/epoxy/rooftop/rooftop-front.jpg';
+import rooftop02Image from '../../assets/brands/epoxy/rooftop/rooftop-back.jpg';
+import rooftop03Image from '../../assets/brands/epoxy/rooftop/rooftop-double.jpg';
+import resins01Image from '../../assets/brands/epoxy/resins/resins-front.jpg';
+import resins02Image from '../../assets/brands/epoxy/resins/resins-back.jpg';
+import resins03Image from '../../assets/brands/epoxy/resins/resins-double.jpg';
 
 const Epoxy = () => {
 
@@ -16,7 +28,7 @@ const Epoxy = () => {
   useEffect(() => {
   if (location.pathname === "/brands/epoxy-dan-interior-epoxy") {
     setActiveFilter("Epoxy");
-  } else if (location.pathname === "/brands/resins-epoxy") {
+  } else if (location.pathname === "/brands/resins-epoxy") { 
     setActiveFilter("Resins");
   } else {
     setActiveFilter("All");
@@ -26,24 +38,127 @@ const Epoxy = () => {
   const categories = 
   [
     "All", 
-    "Epoxy Flooring Paint",
-    "Polyurethane Concrete Floor Paint",
-    "Adhesive",
-    "Field Paint",
-    "Electronics",
+    "Epoxy Flooring Basement",
+    "Epoxy Flooring Rooftop",
+    "Epoxy Flooring Outdoor",
+    "Epoxy Flooring Interior",
+    "Crystal Clear Resins",
   ];
 
   const projects = [
 
     {
-      title: "Epoxy Outdoor",
+      title: "EpoxyGuard",
       image: [
-        polyuthane01Image,
-        polyuthane02Image,
-        polyuthane03Image,
+        basement01Image,
+        basement02Image,
+        basement03Image,
       ],
-      category: "Epoxy Flooring Paint",
-      description: "Epoxy Flooring Paint",
+      category: "Epoxy Flooring Basement",
+      description: "Basement",
+      details: [
+        { label: "Type", value: "Waterbased Acrylic" },
+        { label: "Final Result", value: "Doff" },
+        { label: "Theoretical Spread Power", value: "1.5 – 2.0 m²/kg (200 microns/3 coats including quartz sand)" },
+        { label: "Dry Time", value: "Touch dry 10 minutes (30°C), Ready to use 48 hours" },
+        { label: "Packaging", value: "5 kg, 22.5 kg (+ 10% quartz sand)" },
+        { label: "Shelf Life", value: "1 year in sealed packaging" },
+        { label: "Thinner", value: "Clean water" },
+        { label: "Application Method", value: "Brush and roller" },
+        { label: "Cleaning", value: "After use, clean all equipment with clean water." },
+        { label: "Superiority", value: "Increases strength between topcoat and concrete" },
+      ],
+      color: [
+        "White", "Blue", "Grey", "Charcoal", "Silver"
+      ]
+    },
+
+    {
+      title: "SkyShield Epoxy",
+      image: [
+        rooftop01Image,
+        rooftop02Image,
+        rooftop03Image,
+      ],
+      category: "Epoxy Flooring Rooftop",
+      description: "Rooftop",
+      details: [
+        { label: "Type", value: "Waterbased Acrylic" },
+        { label: "Final Result", value: "Doff" },
+        { label: "Theoretical Spread Power", value: "1.5 – 2.0 m²/kg (200 microns/3 coats including quartz sand)" },
+        { label: "Dry Time", value: "Touch dry 10 minutes (30°C), Ready to use 48 hours" },
+        { label: "Packaging", value: "5 kg, 22.5 kg (+ 10% quartz sand)" },
+        { label: "Shelf Life", value: "1 year in sealed packaging" },
+        { label: "Thinner", value: "Clean water" },
+        { label: "Application Method", value: "Brush and roller" },
+        { label: "Cleaning", value: "After use, clean all equipment with clean water." },
+        { label: "Superiority", value: "Increases strength between topcoat and concrete" },
+      ],
+      color: [
+        "White", "Blue", "Grey", "Charcoal", "Silver"
+      ]
+    },
+
+    {
+      title: "OutGuard Epoxy",
+      image: [
+        outdoor01Image,
+        outdoor02Image,
+        outdoor03Image,
+      ],
+      category: "Epoxy Flooring Outdoor",
+      description: "Outdoor",
+      details: [
+        { label: "Type", value: "Waterbased Acrylic" },
+        { label: "Final Result", value: "Doff" },
+        { label: "Theoretical Spread Power", value: "1.5 – 2.0 m²/kg (200 microns/3 coats including quartz sand)" },
+        { label: "Dry Time", value: "Touch dry 10 minutes (30°C), Ready to use 48 hours" },
+        { label: "Packaging", value: "5 kg, 22.5 kg (+ 10% quartz sand)" },
+        { label: "Shelf Life", value: "1 year in sealed packaging" },
+        { label: "Thinner", value: "Clean water" },
+        { label: "Application Method", value: "Brush and roller" },
+        { label: "Cleaning", value: "After use, clean all equipment with clean water." },
+        { label: "Superiority", value: "Increases strength between topcoat and concrete" },
+      ],
+      color: [
+        "White", "Blue", "Grey", "Charcoal", "Silver"
+      ]
+    },
+
+    {
+      title: "DecoEpoxy",
+      image: [
+        interior01Image,
+        interior02Image,
+        interior03Image,
+      ],
+      category: "Epoxy Flooring Interior",
+      description: "Interior",
+      details: [
+        { label: "Type", value: "Waterbased Acrylic" },
+        { label: "Final Result", value: "Doff" },
+        { label: "Theoretical Spread Power", value: "1.5 – 2.0 m²/kg (200 microns/3 coats including quartz sand)" },
+        { label: "Dry Time", value: "Touch dry 10 minutes (30°C), Ready to use 48 hours" },
+        { label: "Packaging", value: "5 kg, 22.5 kg (+ 10% quartz sand)" },
+        { label: "Shelf Life", value: "1 year in sealed packaging" },
+        { label: "Thinner", value: "Clean water" },
+        { label: "Application Method", value: "Brush and roller" },
+        { label: "Cleaning", value: "After use, clean all equipment with clean water." },
+        { label: "Superiority", value: "Increases strength between topcoat and concrete" },
+      ],
+      color: [
+        "White", "Blue", "Grey", "Charcoal", "Silver"
+      ]
+    },
+    {
+      title: "ClearSeal Resin",
+      image: [
+        resins01Image,
+        resins02Image,
+        resins03Image,
+      ],
+      category: "Crystal Clear Resins",
+      description: "Resins",
       details: [
         { label: "Type", value: "Waterbased Acrylic" },
         { label: "Final Result", value: "Doff" },
@@ -94,7 +209,7 @@ const Epoxy = () => {
               </h2>
             </div>
             <h2 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-900 to-indigo-600 bg-clip-text text-transparent lg:text-6xl">
-              Wave Epoxy
+              Epoxy
             </h2>
           </div>
           <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">
@@ -103,7 +218,7 @@ const Epoxy = () => {
         </div>
 
         {/* Category filters */}
-        <div className="mt-12 flex flex-wrap justify-center gap-4">
+        {/* <div className="mt-12 flex flex-wrap justify-center gap-4">
           {categories.map((category) => (
             <button
               key={category}
@@ -117,7 +232,7 @@ const Epoxy = () => {
               {category}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Projects grid */}
         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-3">

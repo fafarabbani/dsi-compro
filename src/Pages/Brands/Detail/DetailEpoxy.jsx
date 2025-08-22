@@ -2,13 +2,32 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ExternalLink, ArrowUpRight, Code, ArrowLeft } from "lucide-react";
 
-import oneLouverImage from '../../../assets/brands/spandek/louver/seven/1.jpeg';
-import twoLouverImage from '../../../assets/brands/spandek/louver/seven/2.jpg';
-import threeLouverImage from '../../../assets/brands/spandek/louver/seven/3.jpg';
-import fourLouverImage from '../../../assets/brands/spandek/louver/seven/4.jpg';
-import fiveLouverImage from '../../../assets/brands/spandek/louver/seven/5.jpg';
-import oneZincImage from '../../../assets/brands/spandek/zinc/360/1.jpg';
-import oneSpandekImage from '../../../assets/brands/spandek/spandek/5.png';
+import basement01Image from '../../../assets/brands/epoxy/basement/hero/1.jpeg';
+import basement02Image from '../../../assets/brands/epoxy/basement/hero/2.jpeg';
+import basement03Image from '../../../assets/brands/epoxy/basement/hero/3.jpeg';
+import basement04Image from '../../../assets/brands/epoxy/basement/hero/4.jpeg';
+import basement05Image from '../../../assets/brands/epoxy/basement/hero/5.jpeg';
+import basement06Image from '../../../assets/brands/epoxy/basement/hero/6.jpeg';
+import rooftop01Image from '../../../assets/brands/epoxy/rooftop/hero/1.jpeg';
+import rooftop02Image from '../../../assets/brands/epoxy/rooftop/hero/2.jpeg';
+import rooftop03Image from '../../../assets/brands/epoxy/rooftop/hero/3.jpeg';
+import rooftop04Image from '../../../assets/brands/epoxy/rooftop/hero/4.jpeg';
+import rooftop05Image from '../../../assets/brands/epoxy/rooftop/hero/5.jpeg';
+import outdoor01Image from '../../../assets/brands/epoxy/outdoor/hero/1.jpg';
+import outdoor02Image from '../../../assets/brands/epoxy/outdoor/hero/2.jpeg';
+import outdoor03Image from '../../../assets/brands/epoxy/outdoor/hero/3.jpeg';
+import outdoor04Image from '../../../assets/brands/epoxy/outdoor/hero/4.jpeg';
+import outdoor05Image from '../../../assets/brands/epoxy/outdoor/hero/5.jpeg';
+import interior01Image from '../../../assets/brands/epoxy/interior/hero/1.jpeg';
+import interior02Image from '../../../assets/brands/epoxy/interior/hero/2.jpeg';
+import interior03Image from '../../../assets/brands/epoxy/interior/hero/3.jpeg';
+import interior04Image from '../../../assets/brands/epoxy/interior/hero/4.jpeg';
+import interior05Image from '../../../assets/brands/epoxy/interior/hero/5.jpeg';
+import resins01Image from '../../../assets/brands/epoxy/resins/hero/1.jpeg';
+import resins02Image from '../../../assets/brands/epoxy/resins/hero/2.jpeg';
+import resins03Image from '../../../assets/brands/epoxy/resins/hero/3.jpeg';
+import resins04Image from '../../../assets/brands/epoxy/resins/hero/4.jpeg';
+import resins05Image from '../../../assets/brands/epoxy/resins/hero/5.jpeg';
 
 const DetailEpoxy = () => {
   const location = useLocation();
@@ -23,21 +42,46 @@ const DetailEpoxy = () => {
 
   if (project) {
     // Gambar berdasarkan kategori produk
-    if (project.category === "Louver Steel Panel") {
+    if (project.category === "Epoxy Flooring Basement") {
       images = [
-        oneLouverImage,
-        twoLouverImage,
-        threeLouverImage,
-        fourLouverImage,
-        fiveLouverImage
+        basement01Image,
+        basement02Image,
+        basement03Image,
+        basement04Image,
+        basement05Image,
+        basement06Image
       ];
-    } else if (project.category === "Zinc Steel Panel") {
+    } else if (project.category === "Epoxy Flooring Rooftop") {
       images = [
-        oneZincImage,
+        rooftop01Image,
+        rooftop02Image,
+        rooftop03Image,
+        rooftop04Image,
+        rooftop05Image,
       ];
-    } else if (project.category === "Spandek Steel") {
+    } else if (project.category === "Epoxy Flooring Outdoor") {
       images = [
-        oneSpandekImage,
+        outdoor01Image,
+        outdoor02Image,
+        outdoor03Image,
+        outdoor04Image,
+        outdoor05Image,
+      ];
+    } else if (project.category === "Epoxy Flooring Interior") {
+      images = [
+        interior01Image,
+        interior02Image,
+        interior03Image,
+        interior04Image,
+        interior05Image,
+      ];
+    } else if (project.category === "Crystal Clear Resins") {
+      images = [
+        resins01Image,
+        resins02Image,
+        resins03Image,
+        resins04Image,
+        resins05Image,
       ];
     }
     // Kamu bisa menambahkan kategori lainnya sesuai dengan data yang ada

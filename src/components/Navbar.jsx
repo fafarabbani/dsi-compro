@@ -55,15 +55,15 @@ const Navbar = () => {
           href: "/brands/tray"
         },
         {
-          title: "Epoxy",
+          title: "Epoxy Flooring Paint & Resins",
           desc: "ISO : ",
           href: "/brands/epoxy"
         },
-        {
-          title: "Resins",
-          desc: "ISO : ",
-          href: "/brands/epoxy"
-        },
+        // {
+        //   title: "Resins",
+        //   desc: "ISO : ",
+        //   href: "/brands/epoxy"
+        // },
       ],
       gridCols: 2
     },
